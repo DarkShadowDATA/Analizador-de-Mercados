@@ -234,7 +234,10 @@
     estado.mercado = indice.mercados.some((m) => m.id === mh) ? mh : indice.mercados[0].id;
     if (SEGUNDOS[th]) estado.tf = th;
     pintarMercados();
-    if (window.Analisis) Analisis.resumen().catch((e) => console.warn("Resumen de señales:", e));
+    if (window.Analisis) {
+      Analisis.resumen().catch((e) => console.warn("Resumen de señales:", e));
+      Analisis.demo().catch((e) => console.warn("Cuenta demo:", e));
+    }
     await cargarSerie();
   }
 

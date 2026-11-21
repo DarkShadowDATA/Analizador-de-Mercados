@@ -2,7 +2,7 @@ name: Actualizar datos y publicar web
 
 on:
   schedule:
-    - cron: "7 * * * *"      # cada hora, minuto 7 (UTC)
+    - cron: "17 * * * *"     # cada hora, minuto 17 (UTC): da margen a que cierren las velas
   workflow_dispatch:          # botón "Run workflow" para lanzarlo a mano
   push:
     branches: [main]
@@ -40,6 +40,13 @@ jobs:
 
       - name: Calcular señales y backtest
         run: python scripts/generar_senales.py
+
+      - name: Operar en demo (cartera simulada + Bitget demo)
+        env:
+          BITGET_API_KEY: ${{ secrets.BITGET_API_KEY }}
+          BITGET_API_SECRET: ${{ secrets.BITGET_API_SECRET }}
+          BITGET_PASSPHRASE: ${{ secrets.BITGET_PASSPHRASE }}
+        run: python scripts/operar_demo.py
 
       - name: Guardar datos en el repositorio
         run: |

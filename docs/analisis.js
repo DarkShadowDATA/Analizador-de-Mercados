@@ -287,5 +287,62 @@ window.Analisis = (() => {
       tr.classList.toggle("sel", tr.dataset.m === (m && m.id) && tr.dataset.tf === tf));
   }
 
-  return { iniciar, cargar, resumen };
+  // ------------------------------------------------------------ cuenta demo
+  async function demo() {
+    let d;
+    try { d = await json("data/demo.json"); } catch (e) {
+      $("demo-cuerpo").innerHTML = "<p class='nota'>La cuenta demo todavía no ha corrido.</p>";
+      return;
+    }
+    const c = (x) => (x > 0 ? "sube" : x < 0 ? "baja" : "");
+    const k = (t, v, cl = "") => `<div class="kpi"><div class="k">${t}</div><div class="v ${cl}">${v}</div></div>`;
+    const cambio = (d.capital / d.capital_inicial - 1) * 100;
+    const bg = d.bitget || {};
+    const estadoBitget = !bg.conectado ? "Sin claves"
+      : bg.error ? "Error" : "Conectada";
+    let html = `<p class="nota">Opera las señales nuevas desde el ${fecha(d.inicio, "1d")} con las mismas reglas del backtest y riesgo del ` +
+      `${num(d.riesgo_pct, 0)} % por operación. Actualizado: ${new Date(d.generado).toLocaleString("es-ES", { dateStyle: "medium", timeStyle: "short" })}.</p>` +
+      `<div class="kpis">` +
+      k("Cartera simulada", num(d.capital, 0) + " USD") +
+      k("Resultado", signo(cambio, 2) + " %", c(cambio)) +
+      k("Bitget demo", estadoBitget, bg.conectado && !bg.error ? "sube" : "") +
+      (bg.capital != null ? k("Capital en Bitget demo", num(bg.capital, 2) + " SUSDT") : "") +
+      `</div>`;
+
+    html += "<h4>Estrategias</h4><div class='tabla-scroll'><table class='tabla'><thead><tr>" +
+      "<th class='izq'>Mercado</th><th class='izq'>TF</th><th class='izq'>Dónde se ejecuta</th><th>Ops.</th>" +
+      "<th>R total</th><th class='izq'>Posición actual</th></tr></thead><tbody>" +
+      d.estrategias.map((e) => {
+        const ops = e.operaciones || [];
+        const ab = ops.find((o) => o.motivo_salida === "abierta");
+        const cerradas = ops.filter((o) => o.motivo_salida !== "abierta");
+        const rt = cerradas.reduce((a, o) => a + o.r, 0);
+        const pos = ab ? `<span class="${ab.direccion > 0 ? "sube" : "baja"}">${ab.direccion > 0 ? "Larga" : "Corta"}</span> ` +
+          `desde ${num(ab.entrada, e.decimales)} · stop ${num(ab.stop, e.decimales)} · objetivo ${num(ab.objetivo, e.decimales)}` : "Sin posición";
+        return `<tr class="clic" data-m="${e.mercado}" data-tf="${e.tf}"><td>${esc(e.nombre)}</td><td class="izq">${NOMBRE_TF[e.tf]}</td>` +
+          `<td class="izq">${esc(e.ejecucion)}</td><td>${cerradas.length}</td>` +
+          `<td class="${c(rt)}">${cerradas.length ? signo(rt) : "—"}</td><td class="izq">${e.error ? "Error: " + esc(e.error) : pos}</td></tr>`;
+      }).join("") + "</tbody></table></div>";
+
+    const todas = d.estrategias.flatMap((e) => (e.operaciones || []).map((o) => ({ ...o, nombre: e.nombre, tf: e.tf, dec: e.decimales })))
+      .filter((o) => o.motivo_salida !== "abierta").sort((a, b) => b.fecha_salida.localeCompare(a.fecha_salida)).slice(0, 15);
+    if (todas.length) {
+      html += "<h4>Operaciones cerradas</h4><div class='tabla-scroll'><table class='tabla'><thead><tr><th class='izq'>Salida</th>" +
+        "<th class='izq'>Mercado</th><th class='izq'>Señal</th><th>Entrada</th><th>Salida</th><th class='izq'>Motivo</th><th>R</th></tr></thead><tbody>" +
+        todas.map((o) => `<tr><td>${fecha(o.fecha_salida, o.tf)}</td><td class="izq">${esc(o.nombre)} ${NOMBRE_TF[o.tf]}</td>` +
+          `<td class="izq ${o.direccion > 0 ? "sube" : "baja"}">${NOMBRE[o.tipo]}</td><td>${num(o.entrada, o.dec)}</td>` +
+          `<td>${num(o.salida, o.dec)}</td><td class="izq">${SALIDA[o.motivo_salida]}</td><td class="${c(o.r)}">${signo(o.r)}</td></tr>`).join("") +
+        "</tbody></table></div>";
+    }
+    const reg = (bg.registro || []).slice().reverse().slice(0, 10);
+    if (reg.length) {
+      html += "<h4>Órdenes en Bitget demo</h4><ol class='lista-senales'>" + reg.map((r) =>
+        `<li><div class="cab"><span>${esc(r.accion)} · ${esc(r.simbolo || "")}</span><span class="pts">${fecha(r.fecha, "1h")}</span></div>` +
+        `<div class="mot">${esc(r.motivo || (r.cantidad ? `cantidad ${r.cantidad} · stop ${r.stop} · objetivo ${r.objetivo}` : ""))}</div></li>`).join("") + "</ol>";
+    }
+    $("demo-cuerpo").innerHTML = html;
+    $("demo-cuerpo").querySelectorAll("tr.clic").forEach((tr) => { tr.onclick = () => app.seleccionar(tr.dataset.m, tr.dataset.tf); });
+  }
+
+  return { iniciar, cargar, resumen, demo };
 })();

@@ -39,6 +39,14 @@ def cargar(mercado_id: str, tf: str = "1d") -> pd.DataFrame:
     return normalizar(df)
 
 
+def solo_cerradas(df: pd.DataFrame, tf: str, ahora: pd.Timestamp | None = None,
+                  margen: pd.Timedelta = pd.Timedelta(minutes=15)) -> pd.DataFrame:
+    """Quita la vela que sigue abierta (y da un margen por el retraso de los datos)."""
+    ahora = ahora if ahora is not None else pd.Timestamp.now(tz="UTC")
+    fin = df.index + pd.Timedelta(seconds=TEMPORALIDADES[tf])
+    return df[fin + margen <= ahora]
+
+
 def guardar(mercado_id: str, tf: str, df: pd.DataFrame) -> None:
     ruta = ruta_csv(mercado_id, tf)
     ruta.parent.mkdir(parents=True, exist_ok=True)
@@ -122,4 +130,4 @@ def exportar_web(estado: dict) -> dict:
     return indice
 
 
-__all__ = ["cargar", "guardar", "unir", "exportar_web", "leer_estado", "escribir_estado", "por_id"]
+__all__ = ["cargar", "solo_cerradas", "guardar", "unir", "exportar_web", "leer_estado", "escribir_estado", "por_id"]

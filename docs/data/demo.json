@@ -1,0 +1,63 @@
+{
+ "generado": "2026-11-21T20:00:26Z",
+ "inicio": "2026-11-23T00:00:00Z",
+ "capital_inicial": 10000.0,
+ "riesgo_pct": 1.0,
+ "bitget": {
+  "conectado": false,
+  "registro": []
+ },
+ "estrategias": [
+  {
+   "mercado": "eth",
+   "nombre": "Ethereum",
+   "tf": "4h",
+   "decimales": 2,
+   "ejecucion": "Bitget demo SETHSUSDT",
+   "operaciones": [],
+   "metricas": {
+    "operaciones": 0
+   }
+  },
+  {
+   "mercado": "oro",
+   "nombre": "Oro",
+   "tf": "4h",
+   "decimales": 2,
+   "ejecucion": "Simulada (Bitget demo no tiene este mercado)",
+   "operaciones": [],
+   "metricas": {
+    "operaciones": 0
+   }
+  },
+  {
+   "mercado": "sp500",
+   "nombre": "S&P 500",
+   "tf": "1d",
+   "decimales": 2,
+   "ejecucion": "Simulada (Bitget demo no tiene este mercado)",
+   "operaciones": [],
+   "metricas": {
+    "operaciones": 0
+   }
+  },
+  {
+   "mercado": "nasdaq100",
+   "nombre": "Nasdaq 100",
+   "tf": "1h",
+   "decimales": 2,
+   "ejecucion": "Simulada (Bitget demo no tiene este mercado)",
+   "operaciones": [],
+   "metricas": {
+    "operaciones": 0
+   }
+  }
+ ],
+ "capital": 10000.0,
+ "curva": [
+  [
+   "2026-11-23T00:00:00Z",
+   10000.0
+  ]
+ ]
+}

@@ -21,7 +21,7 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
 from analizador import backtest, indicadores, senales  # noqa: E402
-from analizador.almacen import DIR_WEB, cargar  # noqa: E402
+from analizador.almacen import DIR_WEB, cargar, solo_cerradas  # noqa: E402
 from analizador.mercados import MAX_VELAS_WEB, MERCADOS, TEMPORALIDADES  # noqa: E402
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -41,8 +41,10 @@ def analizar(m, tf: str) -> dict | None:
     if len(df) < 300:
         return None
     x = indicadores.calcular(df)
-    lista = senales.detectar(df, PARAMS, x)
-    ops = backtest.simular(df, lista, m.tipo, REGLAS)
+    # Señales y backtest solo con velas cerradas: la vela en curso puede cambiar
+    cerr = solo_cerradas(df, tf)
+    lista = senales.detectar(cerr, PARAMS, x.loc[cerr.index])
+    ops = backtest.simular(cerr, lista, m.tipo, REGLAS)
 
     vis = x.tail(MAX_VELAS_WEB[tf])
     desde_vis = vis.index[0]
@@ -58,7 +60,7 @@ def analizar(m, tf: str) -> dict | None:
     ultima = lista[-1] if lista else None
     activa = None
     if ultima is not None:
-        velas_desde = len(df.loc[ultima.fecha:]) - 1
+        velas_desde = len(cerr.loc[ultima.fecha:]) - 1
         if velas_desde < VELAS_ACTIVA and ultima.puntos >= REGLAS.puntos_min:
             activa = ultima.a_dict() | {"velas_desde": velas_desde}
 
