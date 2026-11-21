@@ -178,7 +178,7 @@
       const signo = m.cambio_pct > 0 ? "+" : "";
       b.innerHTML = `<div class="n">${m.nombre}</div>` +
         `<div class="p">${fmtPrecio(m.ultimo, m.decimales)}</div>` +
-        `<div class="c ${clase}">${m.cambio_pct == null ? "" : signo + fmtPrecio(m.cambio_pct) + " % hoy"}</div>`;
+        `<div class="c ${clase}">${m.cambio_pct == null ? "" : signo + fmtPrecio(m.cambio_pct) + " % día"}</div>`;
       b.onclick = () => { estado.mercado = m.id; cargarSerie().catch(mostrarError); };
       nav.appendChild(b);
     }
