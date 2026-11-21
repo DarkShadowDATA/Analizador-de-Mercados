@@ -11,7 +11,8 @@ Empezó: 2026-11-21 13:47 UTC · Actualizado: 2026-11-21 · Estado: en curso
 
 ## Pasos
 - [x] 1. Código: descarga, almacén, script, web, pruebas (8 pasan)
-- [ ] 2. Subir a GitHub y activar Pages ← SIGUIENTE
+- [x] 2. Subido a GitHub; datos reales OK en Actions (Bitget + Yahoo)
+- [ ] 2b. Activar Pages (lo hace Alejandro: repo privado → público o Pro) ← SIGUIENTE
 - [ ] 3. Primera corrida del workflow con datos reales y revisar la web
 - [ ] 4. Entregar a Alejandro
 

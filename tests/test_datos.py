@@ -96,7 +96,11 @@ def test_bitget_pagina_hacia_atras(monkeypatch):
     todas = [[str(fin - i * hora), "1", "2", "0.5", "1.5", "10", "15", "15"] for i in range(450)]
     llamadas = []
 
+    recientes = [[str(fin + i * hora), "1", "2", "0.5", "1.5", "10", "15", "15"] for i in (0, 1, 2)]
+
     def get(self, url, params, timeout):
+        if url == fuentes.BITGET_URL_RECIENTES:
+            return RespuestaFalsa(recientes)
         llamadas.append(params["endTime"])
         lote = [f for f in todas if int(f[0]) <= params["endTime"]][:200]
         return RespuestaFalsa(lote)
@@ -105,7 +109,8 @@ def test_bitget_pagina_hacia_atras(monkeypatch):
     monkeypatch.setattr(fuentes.time, "time", lambda: fin / 1000)
     monkeypatch.setattr(fuentes.time, "sleep", lambda s: None)
     df = fuentes.bitget("BTCUSDT", "1h", desde=pd.Timestamp(fin - 300 * hora, unit="ms", tz="UTC"))
-    assert len(df) == 301
+    assert len(df) == 303  # 301 del histórico + 2 recientes (la de `fin` está repetida)
+    assert df.index[-1] == pd.Timestamp(fin + 2 * hora, unit="ms", tz="UTC")
     assert df.index.is_monotonic_increasing
     assert len(llamadas) == 2
     assert df["volume"].iloc[0] == 10.0

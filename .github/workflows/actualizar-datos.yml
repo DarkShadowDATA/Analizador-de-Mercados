@@ -22,9 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -50,13 +50,15 @@ jobs:
             for i in 1 2 3; do git pull -q --rebase origin main && git push -q && break; sleep 5; done
           fi
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: docs
 
   publicar:
     needs: actualizar
     runs-on: ubuntu-latest
+    # Mientras GitHub Pages no esté activado, que este paso no marque error cada hora
+    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

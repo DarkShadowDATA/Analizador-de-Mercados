@@ -88,6 +88,8 @@ def yahoo(simbolo: str, temporalidad: str) -> pd.DataFrame:
 # --------------------------------------------------------------------------
 
 BITGET_URL = "https://api.bitget.com/api/v2/spot/market/history-candles"
+# history-candles no trae las velas más recientes (ni la abierta): se completan con este
+BITGET_URL_RECIENTES = "https://api.bitget.com/api/v2/spot/market/candles"
 _BITGET_GRANULARIDAD = {"1h": "1h", "4h": "4h", "1d": "1Dutc"}
 # Hasta dónde ir hacia atrás en la primera descarga (días)
 _BITGET_DIAS_ATRAS = {"1h": 730, "4h": 2200, "1d": 3000}
@@ -127,6 +129,17 @@ def bitget(simbolo: str, temporalidad: str, desde: pd.Timestamp | None = None) -
             break
         fin_ms = mas_antigua - 1
         time.sleep(0.12)  # respetar el límite de peticiones
+
+    # Las velas más recientes (incluida la que sigue abierta)
+    resp = sesion.get(
+        BITGET_URL_RECIENTES,
+        params={"symbol": simbolo, "granularity": gran, "limit": 200},
+        timeout=20,
+    )
+    resp.raise_for_status()
+    cuerpo = resp.json()
+    if str(cuerpo.get("code")) == "00000":
+        filas.extend(cuerpo.get("data") or [])
 
     if not filas:
         return vacio()
