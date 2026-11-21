@@ -1,5 +1,5 @@
 # Tarea: Paso 1 del analizador — datos + web base ("Va")
-Empezó: 2026-11-21 13:47 UTC · Actualizado: 2026-11-21 · Estado: en curso
+Empezó: 2026-11-21 13:47 UTC · Actualizado: 2026-11-21 · Estado: terminada
 
 ## Decisiones tomadas (no volver a preguntar)
 - Repo: DarkShadowDATA/Analizador-de-Mercados (lo creó Alejandro).
@@ -12,9 +12,9 @@ Empezó: 2026-11-21 13:47 UTC · Actualizado: 2026-11-21 · Estado: en curso
 ## Pasos
 - [x] 1. Código: descarga, almacén, script, web, pruebas (8 pasan)
 - [x] 2. Subido a GitHub; datos reales OK en Actions (Bitget + Yahoo)
-- [ ] 2b. Activar Pages (lo hace Alejandro: repo privado → público o Pro) ← SIGUIENTE
-- [ ] 3. Primera corrida del workflow con datos reales y revisar la web
-- [ ] 4. Entregar a Alejandro
+- [x] 2b. Repo público y Pages activo: https://darkshadowdata.github.io/Analizador-de-Mercados/
+- [x] 3. Corridas con datos reales OK (Bitget + Yahoo, 0 fallos)
+- [x] 4. Entregado. Siguiente: paso 2 (señales + backtesting) cuando Alejandro lo apruebe
 
 ## Para retomar
 - Código en el repo. `pip install -r requirements.txt -r requirements-dev.txt && python -m pytest -q`

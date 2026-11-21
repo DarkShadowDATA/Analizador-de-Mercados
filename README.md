@@ -2,7 +2,7 @@
 
 Detección de señales de compra/venta y backtesting para **S&P 500, Nasdaq 100, oro y cripto (BTC, ETH)**.
 
-Estado: **paso 1 de 4 — datos y web con gráficos.**
+Estado: **paso 1 de 4 — datos y web con gráficos.** Web: https://darkshadowdata.github.io/Analizador-de-Mercados/
 
 | Paso | Qué | Estado |
 |---|---|---|
