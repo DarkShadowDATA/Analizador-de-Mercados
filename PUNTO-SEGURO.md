@@ -1,5 +1,5 @@
 # Tarea: Paso 2 — señales (RSI + perfil de volumen anclado + Wyckoff) y backtesting
-Empezó: 2026-11-21 16:47 UTC · Estado: en curso
+Empezó: 2026-11-21 16:47 UTC · Estado: terminada (pendiente decisión de Alejandro sobre la estrategia)
 Pedido: "Podemos avanzar al paso 2 mientras esperamos? ... dejarlo operativo esta semana, desde el lunes"
 
 ## Decisiones tomadas (no volver a preguntar)
@@ -15,7 +15,7 @@ Pedido: "Podemos avanzar al paso 2 mientras esperamos? ... dejarlo operativo est
 - [x] 3. Backtest (analizador/backtest.py). Resultado honesto: sin ventaja (~-0,1R por operación con costos). Config por defecto: pm3, filtro SMA200, stop 1 ATR, 1-3R
 - [x] 3b. scripts/generar_senales.py (JSON para la web)
 - [x] 4. Web: marcas, niveles, RSI, tabla de resultados (docs/analisis.js)
-- [ ] 5. Workflow + publicar ← SIGUIENTE
+- [x] 5. Workflow recalcula señales cada hora; publicado en Pages
 
 ## Paso 1 (terminado 2026-11-21)
 Web: https://darkshadowdata.github.io/Analizador-de-Mercados/ · datos cada hora por Actions.
