@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analizador de mercados</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="vendor/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+  <header class="cabecera">
+    <div>
+      <h1>Analizador de mercados</h1>
+      <p class="sub" id="actualizado">Cargando datos…</p>
+    </div>
+  </header>
+
+  <nav class="mercados" id="mercados" aria-label="Mercados"></nav>
+
+  <main class="panel">
+    <div class="barra">
+      <div class="titulo-grafico">
+        <h2 id="nombre">—</h2>
+        <span class="vivo" id="vivo" hidden><i></i> En vivo</span>
+      </div>
+      <div class="tfs" id="tfs" role="tablist" aria-label="Temporalidad"></div>
+    </div>
+    <div class="leyenda" id="leyenda"></div>
+    <div class="grafico" id="grafico"></div>
+    <p class="nota" id="nota"></p>
+  </main>
+
+  <footer class="pie">
+    Paso 1: datos y gráficos. Las señales (RSI, perfil de volumen anclado y Wyckoff) llegan en el paso 2.
+    Datos: Yahoo Finance (futuros) y Bitget. Solo informativo, no es consejo financiero.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
