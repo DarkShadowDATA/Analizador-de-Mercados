@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21T16:51:09Z",
+ "actualizado": "2026-11-21T16:54:24Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 60120.79,
-   "cambio_pct": 1.99
+   "ultimo": 60061.07,
+   "cambio_pct": 1.89
   },
   {
    "id": "eth",
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1684.67,
-   "cambio_pct": 3.79
+   "ultimo": 1683.5,
+   "cambio_pct": 3.72
   }
  ]
 }
