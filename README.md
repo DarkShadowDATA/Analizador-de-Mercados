@@ -2,12 +2,12 @@
 
 Detección de señales de compra/venta y backtesting para **S&P 500, Nasdaq 100, oro y cripto (BTC, ETH)**.
 
-Estado: **paso 1 de 4 — datos y web con gráficos.** Web: https://darkshadowdata.github.io/Analizador-de-Mercados/
+Estado: **paso 2 de 4 — señales y backtesting.** Web: https://darkshadowdata.github.io/Analizador-de-Mercados/
 
 | Paso | Qué | Estado |
 |---|---|---|
-| 1 | Datos OHLCV (con volumen) + web con gráficos | ✅ este repo |
-| 2 | Señales (RSI, perfil de volumen anclado, Wyckoff) + backtesting | pendiente |
+| 1 | Datos OHLCV (con volumen) + web con gráficos | ✅ |
+| 2 | Señales (RSI, perfil de volumen anclado, Wyckoff) + backtesting | ✅ primera versión |
 | 3 | Reportes automáticos diarios en la web | pendiente |
 | 4 | Trading automático en la cuenta demo de Bitget | pendiente |
 
@@ -28,6 +28,15 @@ GitHub Actions (cada hora)
 - **Cripto en vivo:** la web se conecta al WebSocket público de Bitget y mueve la última vela con el precio en tiempo real.
 - No se mezclan fuentes: si un día Bitget falla y responde Yahoo, ese día no se toca el histórico de Bitget (el volumen no es comparable).
 
+## Señales (paso 2)
+
+- `analizador/indicadores.py`: RSI 14 (Wilder), ATR, pivotes y **perfil de volumen anclado** al último giro importante confirmado (POC, VAH, VAL). Sin mirar al futuro.
+- `analizador/senales.py`: **spring**, **upthrust** y **test** de Wyckoff dentro de rangos laterales. Cada señal suma puntos (1 a 4) si la confirman el RSI, el perfil de volumen y el volumen.
+- `analizador/backtest.py`: entra en la apertura siguiente, stop 1 ATR tras el extremo, objetivo al otro lado del área de valor (1R a 3R), solo a favor de la media de 200, con comisiones.
+- `scripts/generar_senales.py`: genera `docs/data/analisis_*.json` y `docs/data/resumen_senales.json` para la web (y para los pasos 3 y 4).
+
+**Resultado honesto del primer backtest (21 nov 2026):** en conjunto las reglas no tienen ventaja (unas −0,1R por operación con costos). Algunos gráficos salen positivos (ETH 4H, oro 4H, S&P 500 1D, Nasdaq 1H) pero con pocas operaciones. No usar con dinero real hasta mejorarlas.
+
 ## Usarlo en tu PC (Windows)
 
 ```powershell
@@ -35,6 +44,7 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt -r requirements-dev.txt
 python scripts/actualizar_datos.py          # descarga todo
+python scripts/generar_senales.py           # señales + backtest
 python -m http.server 8000 -d docs          # abre http://localhost:8000
 ```
 

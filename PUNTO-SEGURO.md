@@ -13,9 +13,9 @@ Pedido: "Podemos avanzar al paso 2 mientras esperamos? ... dejarlo operativo est
 - [x] 1. Indicadores (analizador/indicadores.py)
 - [x] 2. Detector Wyckoff (analizador/senales.py)
 - [x] 3. Backtest (analizador/backtest.py). Resultado honesto: sin ventaja (~-0,1R por operación con costos). Config por defecto: pm3, filtro SMA200, stop 1 ATR, 1-3R
-- [ ] 3b. scripts/generar_senales.py (JSON para la web) ← SIGUIENTE
-- [ ] 4. Web: marcas, niveles, RSI, tabla de resultados
-- [ ] 5. Workflow + publicar
+- [x] 3b. scripts/generar_senales.py (JSON para la web)
+- [x] 4. Web: marcas, niveles, RSI, tabla de resultados (docs/analisis.js)
+- [ ] 5. Workflow + publicar ← SIGUIENTE
 
 ## Paso 1 (terminado 2026-11-21)
 Web: https://darkshadowdata.github.io/Analizador-de-Mercados/ · datos cada hora por Actions.

@@ -17,6 +17,8 @@
 
   <nav class="mercados" id="mercados" aria-label="Mercados"></nav>
 
+  <div class="activa" id="activa" hidden></div>
+
   <main class="panel">
     <div class="barra">
       <div class="titulo-grafico">
@@ -25,16 +27,60 @@
       </div>
       <div class="tfs" id="tfs" role="tablist" aria-label="Temporalidad"></div>
     </div>
+    <div class="capas" id="capas">
+      <label><input type="checkbox" data-capa="senales" checked> Señales</label>
+      <label><input type="checkbox" data-capa="perfil" checked> Perfil de volumen</label>
+      <label><input type="checkbox" data-capa="niveles" checked> POC / VAH / VAL</label>
+      <label><input type="checkbox" data-capa="media"> Media 200</label>
+    </div>
     <div class="leyenda" id="leyenda"></div>
-    <div class="grafico" id="grafico"></div>
+    <div class="grafico-caja">
+      <div class="grafico" id="grafico"></div>
+      <canvas class="perfil" id="perfil"></canvas>
+    </div>
+    <div class="rsi-caja">
+      <span class="rsi-titulo">RSI 14</span>
+      <div class="rsi" id="rsi"></div>
+    </div>
     <p class="nota" id="nota"></p>
   </main>
 
+  <section class="columnas">
+    <div class="panel">
+      <h3>Señales recientes</h3>
+      <ol class="lista-senales" id="lista-senales"></ol>
+    </div>
+    <div class="panel">
+      <h3>Backtest de este gráfico</h3>
+      <div id="metricas"></div>
+      <h4>Últimas operaciones simuladas</h4>
+      <div class="tabla-scroll"><table class="tabla" id="operaciones"></table></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h3>Resumen del backtest (todos los mercados)</h3>
+    <p class="nota" id="reglas"></p>
+    <div class="tabla-scroll"><table class="tabla" id="resumen"></table></div>
+  </section>
+
+  <details class="panel ayuda">
+    <summary>¿Cómo se leen las señales?</summary>
+    <ul>
+      <li><b>Spring</b> (flecha verde bajo la vela): el precio perfora el soporte del rango y vuelve a cerrar dentro. Es una falsa ruptura bajista: posible entrada larga.</li>
+      <li><b>Upthrust</b> (flecha roja sobre la vela): perfora la resistencia y vuelve a cerrar dentro. Falsa ruptura alcista: posible entrada corta.</li>
+      <li><b>Test</b>: el precio vuelve cerca del extremo del spring/upthrust con menos volumen y lo respeta.</li>
+      <li><b>Puntos (1 a 4)</b>: 1 por el evento, +1 si el RSI confirma (sobreventa/sobrecompra o divergencia), +1 si el nivel coincide con el VAL/VAH/POC del perfil de volumen anclado, +1 si el volumen confirma (perforación sin volumen o vuelta con volumen alto).</li>
+      <li><b>Perfil de volumen anclado</b>: volumen negociado por precio desde el último giro importante. POC = precio con más volumen; VAH/VAL = techo y piso del 70 % del volumen.</li>
+      <li>El backtest entra en la apertura de la vela siguiente, con stop 1 ATR detrás del extremo y objetivo en el otro lado del área de valor (entre 1R y 3R). Solo opera a favor de la media de 200 velas y con 3 puntos o más. Incluye comisiones.</li>
+    </ul>
+  </details>
+
   <footer class="pie">
-    Paso 1: datos y gráficos. Las señales (RSI, perfil de volumen anclado y Wyckoff) llegan en el paso 2.
     Datos: Yahoo Finance (futuros) y Bitget. Solo informativo, no es consejo financiero.
   </footer>
 
+  <script src="analisis.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

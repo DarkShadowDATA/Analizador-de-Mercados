@@ -2,6 +2,7 @@
  * Lee docs/data/indice.json y docs/data/<mercado>_<tf>.json (generados por
  * scripts/actualizar_datos.py) y dibuja velas + volumen con Lightweight Charts.
  * Para cripto añade precio en vivo desde el WebSocket público de Bitget.
+ * Las señales, el perfil de volumen, el RSI y el backtest los dibuja analisis.js.
  */
 (() => {
   "use strict";
@@ -53,6 +54,9 @@
       priceFormat: { type: "volume" }, priceScaleId: "vol", lastValueVisible: false, priceLineVisible: false,
     });
     grafico.priceScale("vol").applyOptions({ scaleMargins: { top: 0.78, bottom: 0 } });
+
+    window.Analisis && Analisis.iniciar({ grafico, serieVelas, velas: () => velas,
+      mercado: mercadoActual, tf: () => estado.tf, seleccionar });
 
     grafico.subscribeCrosshairMove((p) => {
       const v = p && p.time != null ? velas.find((x) => x.time === p.time) : null;
@@ -111,6 +115,14 @@
       (velas.length < s.velas ? ` (en el gráfico, las últimas ${velas.length.toLocaleString("es-ES")}).` : ".");
 
     conectarVivo(m, tf);
+    if (window.Analisis) await Analisis.cargar(m, tf);
+  }
+
+  function seleccionar(id, tf) {
+    estado.mercado = id;
+    if (tf) estado.tf = tf;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return cargarSerie().catch(mostrarError);
   }
 
   // ---------------------------------------------------------------- en vivo (cripto)
@@ -222,6 +234,7 @@
     estado.mercado = indice.mercados.some((m) => m.id === mh) ? mh : indice.mercados[0].id;
     if (SEGUNDOS[th]) estado.tf = th;
     pintarMercados();
+    if (window.Analisis) Analisis.resumen().catch((e) => console.warn("Resumen de señales:", e));
     await cargarSerie();
   }
 
