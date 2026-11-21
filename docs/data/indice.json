@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21T16:01:23Z",
+ "actualizado": "2026-11-21T16:02:07Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -15,13 +15,13 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13662,
+     "velas": 13729,
      "desde": "2024-07-01",
      "hasta": "2026-11-20T21:00Z",
      "fuente": "Yahoo ES=F"
     },
     "4h": {
-     "velas": 3701,
+     "velas": 3718,
      "desde": "2024-07-01",
      "hasta": "2026-11-20T20:00Z",
      "fuente": "Yahoo ES=F"
@@ -45,13 +45,13 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13659,
+     "velas": 13726,
      "desde": "2024-07-01",
      "hasta": "2026-11-20T21:00Z",
      "fuente": "Yahoo NQ=F"
     },
     "4h": {
-     "velas": 3699,
+     "velas": 3716,
      "desde": "2024-07-01",
      "hasta": "2026-11-20T20:00Z",
      "fuente": "Yahoo NQ=F"
@@ -75,13 +75,13 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13693,
+     "velas": 13759,
      "desde": "2024-07-01",
      "hasta": "2026-11-20T21:00Z",
      "fuente": "Yahoo GC=F"
     },
     "4h": {
-     "velas": 3707,
+     "velas": 3724,
      "desde": "2024-07-01",
      "hasta": "2026-11-20T20:00Z",
      "fuente": "Yahoo GC=F"
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 59913.91,
-   "cambio_pct": 1.64
+   "ultimo": 59907.0,
+   "cambio_pct": 1.63
   },
   {
    "id": "eth",
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1682.67,
-   "cambio_pct": 3.67
+   "ultimo": 1682.18,
+   "cambio_pct": 3.64
   }
  ]
 }
