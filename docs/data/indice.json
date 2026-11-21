@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21T19:56:58Z",
+ "actualizado": "2026-11-21T20:01:07Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -105,15 +105,15 @@
    "bitget": "BTCUSDT",
    "series": {
     "1h": {
-     "velas": 17437,
+     "velas": 17438,
      "desde": "2024-11-21",
-     "hasta": "2026-11-21T19:00Z",
+     "hasta": "2026-11-21T20:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "4h": {
-     "velas": 13136,
+     "velas": 13137,
      "desde": "2020-11-12",
-     "hasta": "2026-11-21T16:00Z",
+     "hasta": "2026-11-21T20:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "1d": {
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 60249.76,
-   "cambio_pct": 2.21
+   "ultimo": 60324.36,
+   "cambio_pct": 2.34
   },
   {
    "id": "eth",
@@ -135,15 +135,15 @@
    "bitget": "ETHUSDT",
    "series": {
     "1h": {
-     "velas": 17437,
+     "velas": 17438,
      "desde": "2024-11-21",
-     "hasta": "2026-11-21T19:00Z",
+     "hasta": "2026-11-21T20:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "4h": {
-     "velas": 13136,
+     "velas": 13137,
      "desde": "2020-11-12",
-     "hasta": "2026-11-21T16:00Z",
+     "hasta": "2026-11-21T20:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "1d": {
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1685.14,
-   "cambio_pct": 3.82
+   "ultimo": 1685.49,
+   "cambio_pct": 3.84
   }
  ]
 }
