@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       dias:
-        description: "Días hacia atrás"
+        description: "Días hacia atrás (o extra4h para las criptos extra en 4H)"
         default: "365"
 
 permissions:

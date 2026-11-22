@@ -20,7 +20,30 @@ DIR = Path(__file__).resolve().parent.parent / "data" / "intradia"
 MERCADOS = {"btc": "BTCUSDT", "eth": "ETHUSDT"}
 
 
+# Criptos extra para ampliar la cartera de 4H (22-nov-2026)
+EXTRA_4H = ["SOLUSDT", "XRPUSDT", "DOGEUSDT", "BNBUSDT", "ADAUSDT", "AVAXUSDT", "LINKUSDT", "DOTUSDT",
+            "LTCUSDT", "BCHUSDT", "TRXUSDT", "SUIUSDT", "TONUSDT", "NEARUSDT", "APTUSDT", "ARBUSDT",
+            "OPUSDT", "INJUSDT", "ATOMUSDT", "UNIUSDT"]
+
+
+def extra_4h():
+    for sym in EXTRA_4H:
+        try:
+            df = fuentes.bitget(sym, "4h")
+        except Exception as ex:  # noqa: BLE001
+            logging.error("%s: %s", sym, ex)
+            continue
+        out = df.copy()
+        out.index = out.index.strftime("%Y-%m-%dT%H:%M:%SZ")
+        out.to_csv(DIR / f"{sym.lower()}_4h.csv.gz", float_format="%.8g", compression="gzip")
+        logging.info("%s: %d velas de 4h desde %s", sym, len(df), df.index[0] if len(df) else "-")
+    return 0
+
+
 def main(args):
+    if args and args[0] == "extra4h":
+        DIR.mkdir(parents=True, exist_ok=True)
+        return extra_4h()
     dias = int(args[0]) if args else 365
     DIR.mkdir(parents=True, exist_ok=True)
     for mid, sym in MERCADOS.items():
