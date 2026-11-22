@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T16:15:18Z",
+ "generado": "2026-11-22T21:47:00Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -689,22 +689,22 @@
     "hasta": "2026-11-17"
    },
    "ultima_senal": {
-    "fecha": "2026-11-22T12:00:00Z",
-    "tipo": "upthrust",
+    "fecha": "2026-11-22T17:00:00Z",
+    "tipo": "test_upthrust",
     "direccion": -1,
-    "cierre": 1707.11,
-    "nivel": 1723.73,
+    "cierre": 1714.43,
+    "nivel": 1732.25,
     "extremo": 1732.25,
     "poc": 1686.099,
-    "vah": 1717.676,
-    "val": 1630.232,
-    "rsi": 61.279865,
-    "vol_rel": 3.374842,
-    "atr": 19.535146,
-    "puntos": 2,
+    "vah": 1722.534,
+    "val": 1639.948,
+    "rsi": 60.857846,
+    "vol_rel": 0.594117,
+    "atr": 17.377798,
+    "puntos": 3,
     "motivos": [
-     "divergencia de RSI",
-     "sacudida con volumen alto (3.4x): esperar test"
+     "retesteo del máximo con menos volumen",
+     "volumen seco (0.6x)"
     ]
    },
    "senal_activa": null
@@ -1081,26 +1081,7 @@
      "volumen seco (0.1x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-22T04:00:00Z",
-    "tipo": "test_spring",
-    "direccion": 1,
-    "cierre": 5.955,
-    "nivel": 5.847,
-    "extremo": 5.847,
-    "poc": 6.959138,
-    "vah": 7.45605,
-    "val": 6.32025,
-    "rsi": 32.300038,
-    "vol_rel": 0.141605,
-    "atr": 0.257568,
-    "puntos": 3,
-    "motivos": [
-     "retesteo del mínimo con menos volumen",
-     "volumen seco (0.1x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "inj",
