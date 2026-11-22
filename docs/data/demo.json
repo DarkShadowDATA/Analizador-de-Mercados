@@ -1,11 +1,45 @@
 {
- "generado": "2026-11-22T02:42:12Z",
+ "generado": "2026-11-22T03:07:24Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
  "bitget": {
-  "conectado": false,
-  "registro": []
+  "conectado": true,
+  "error": "GET /api/v2/mix/account/account: 40099 exchange environment is incorrect",
+  "registro": [
+   {
+    "fecha": "2026-11-22T03:07:24Z",
+    "mercado": "eth",
+    "tf": "4h",
+    "simbolo": "SETHSUSDT",
+    "accion": "error",
+    "motivo": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
+   },
+   {
+    "fecha": "2026-11-22T03:07:24Z",
+    "mercado": "btc",
+    "tf": "4h",
+    "simbolo": "SBTCSUSDT",
+    "accion": "error",
+    "motivo": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
+   },
+   {
+    "fecha": "2026-11-22T03:07:24Z",
+    "mercado": "eth",
+    "tf": "5m",
+    "simbolo": "SETHSUSDT",
+    "accion": "error",
+    "motivo": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
+   },
+   {
+    "fecha": "2026-11-22T03:07:24Z",
+    "mercado": "btc",
+    "tf": "5m",
+    "simbolo": "SBTCSUSDT",
+    "accion": "error",
+    "motivo": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
+   }
+  ]
  },
  "estrategias": [
   {
@@ -19,6 +53,9 @@
    "operaciones": [],
    "metricas": {
     "operaciones": 0
+   },
+   "bitget": {
+    "error": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
    }
   },
   {
@@ -32,6 +69,9 @@
    "operaciones": [],
    "metricas": {
     "operaciones": 0
+   },
+   "bitget": {
+    "error": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
    }
   },
   {
@@ -136,6 +176,9 @@
    "operaciones": [],
    "metricas": {
     "operaciones": 0
+   },
+   "bitget": {
+    "error": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
    }
   },
   {
@@ -149,6 +192,9 @@
    "operaciones": [],
    "metricas": {
     "operaciones": 0
+   },
+   "bitget": {
+    "error": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
    }
   }
  ],

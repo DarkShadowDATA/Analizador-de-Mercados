@@ -1,1 +1,34 @@
-[]
+[
+ {
+  "fecha": "2026-11-22T03:07:24Z",
+  "mercado": "eth",
+  "tf": "4h",
+  "simbolo": "SETHSUSDT",
+  "accion": "error",
+  "motivo": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
+ },
+ {
+  "fecha": "2026-11-22T03:07:24Z",
+  "mercado": "btc",
+  "tf": "4h",
+  "simbolo": "SBTCSUSDT",
+  "accion": "error",
+  "motivo": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
+ },
+ {
+  "fecha": "2026-11-22T03:07:24Z",
+  "mercado": "eth",
+  "tf": "5m",
+  "simbolo": "SETHSUSDT",
+  "accion": "error",
+  "motivo": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
+ },
+ {
+  "fecha": "2026-11-22T03:07:24Z",
+  "mercado": "btc",
+  "tf": "5m",
+  "simbolo": "SBTCSUSDT",
+  "accion": "error",
+  "motivo": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
+ }
+]
