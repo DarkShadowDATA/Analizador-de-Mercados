@@ -23,3 +23,9 @@ Web: https://darkshadowdata.github.io/Analizador-de-Mercados/ · datos cada hora
 ## Para retomar
 - `pip install -r requirements.txt -r requirements-dev.txt && python -m pytest -q`
 - Los datos reales ya están en data/*.csv (la máquina de Claude no llega a Yahoo/Bitget).
+
+## 22-nov (noche): más operaciones (Alejandro eligió "Las dos")
+- [x] 4H en 19 criptos extra de Bitget (scripts/backtest_extra_4h.py). Positivas en las dos mitades: OP, INJ, BCH, SUI -> añadidas a MERCADOS y a la cartera 4H (solo papel). Promedio de las 19 ~0R: hay sesgo de selección.
+- [x] Experimento 5m: analizador/rango_asia.py (falsa ruptura del rango asiático 00-08 UTC, señales 08-20 UTC, stop >= 0,4 %, objetivo el otro lado, cierre 23:55). En CARTERA BTC/ETH 5m con Bitget demo; la 4H tiene prioridad sobre el contrato. Cuenta aparte (capital_experimento). Backtest -0,26/-0,37R.
+- [x] Workflow demo-5m.yml cada 5 min (velas_5m.py + operar_demo.py); la corrida horaria ya no opera.
+- [ ] Verificar el lunes 23 que entren las primeras operaciones de 5m; claves de Bitget siguen pendientes.
