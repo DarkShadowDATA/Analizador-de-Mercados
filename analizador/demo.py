@@ -213,8 +213,10 @@ def correr(cli: BitgetDemo | None) -> dict:
                 fila["bitget"] = sincronizar_bitget(cli, e, ops, reglas, registro)
             except (ErrorBitget, Exception) as ex:  # noqa: BLE001
                 log.error("%s: error con Bitget: %s", e.bitget, ex)
-                registro.append({"fecha": salida["generado"], "mercado": e.mercado, "tf": e.tf,
-                                 "simbolo": e.bitget, "accion": "error", "motivo": str(ex)[:300]})
+                previo = [r for r in registro if r.get("simbolo") == e.bitget and r.get("tf") == e.tf]
+                if not previo or previo[-1].get("accion") != "error" or previo[-1].get("motivo") != str(ex)[:300]:
+                    registro.append({"fecha": salida["generado"], "mercado": e.mercado, "tf": e.tf,
+                                     "simbolo": e.bitget, "accion": "error", "motivo": str(ex)[:300]})
                 fila["bitget"] = {"error": str(ex)[:300]}
         salida["estrategias"].append(fila)
 
