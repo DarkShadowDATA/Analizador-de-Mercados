@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T02:36:31Z",
+ "actualizado": "2026-11-22T02:40:58Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 59622.97,
-   "cambio_pct": -0.99
+   "ultimo": 59627.0,
+   "cambio_pct": -0.98
   },
   {
    "id": "eth",
@@ -153,8 +153,128 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1675.76,
-   "cambio_pct": -0.59
+   "ultimo": 1675.96,
+   "cambio_pct": -0.58
+  },
+  {
+   "id": "op",
+   "nombre": "Optimism",
+   "descripcion": "OP/USDT spot de Bitget (respaldo: OP-USD de Yahoo). Añadido el 22-nov-2026 para la cartera de 4H.",
+   "tipo": "cripto",
+   "decimales": 4,
+   "bitget": "OPUSDT",
+   "series": {
+    "1h": {
+     "velas": 17433,
+     "desde": "2024-11-22",
+     "hasta": "2026-11-22T02:00Z",
+     "fuente": "Bitget OPUSDT"
+    },
+    "4h": {
+     "velas": 9765,
+     "desde": "2022-05-31",
+     "hasta": "2026-11-22T00:00Z",
+     "fuente": "Bitget OPUSDT"
+    },
+    "1d": {
+     "velas": 1629,
+     "desde": "2022-05-31",
+     "hasta": "2026-11-22T00:00Z",
+     "fuente": "Bitget OPUSDT"
+    }
+   },
+   "ultimo": 0.07,
+   "cambio_pct": -0.74
+  },
+  {
+   "id": "inj",
+   "nombre": "Injective",
+   "descripcion": "INJ/USDT spot de Bitget (respaldo: INJ-USD de Yahoo). Añadido el 22-nov-2026 para la cartera de 4H.",
+   "tipo": "cripto",
+   "decimales": 3,
+   "bitget": "INJUSDT",
+   "series": {
+    "1h": {
+     "velas": 17433,
+     "desde": "2024-11-22",
+     "hasta": "2026-11-22T02:00Z",
+     "fuente": "Bitget INJUSDT"
+    },
+    "4h": {
+     "velas": 9044,
+     "desde": "2022-09-29",
+     "hasta": "2026-11-22T00:00Z",
+     "fuente": "Bitget INJUSDT"
+    },
+    "1d": {
+     "velas": 1509,
+     "desde": "2022-09-29",
+     "hasta": "2026-11-22T00:00Z",
+     "fuente": "Bitget INJUSDT"
+    }
+   },
+   "ultimo": 5.915,
+   "cambio_pct": -1.24
+  },
+  {
+   "id": "bch",
+   "nombre": "Bitcoin Cash",
+   "descripcion": "BCH/USDT spot de Bitget (respaldo: BCH-USD de Yahoo). Añadido el 22-nov-2026 para la cartera de 4H.",
+   "tipo": "cripto",
+   "decimales": 2,
+   "bitget": "BCHUSDT",
+   "series": {
+    "1h": {
+     "velas": 17433,
+     "desde": "2024-11-22",
+     "hasta": "2026-11-22T02:00Z",
+     "fuente": "Bitget BCHUSDT"
+    },
+    "4h": {
+     "velas": 13135,
+     "desde": "2020-11-13",
+     "hasta": "2026-11-22T00:00Z",
+     "fuente": "Bitget BCHUSDT"
+    },
+    "1d": {
+     "velas": 2986,
+     "desde": "2018-09-06",
+     "hasta": "2026-11-22T00:00Z",
+     "fuente": "Bitget BCHUSDT"
+    }
+   },
+   "ultimo": 198.5,
+   "cambio_pct": -0.55
+  },
+  {
+   "id": "sui",
+   "nombre": "Sui",
+   "descripcion": "SUI/USDT spot de Bitget (respaldo: SUI20947-USD de Yahoo). Añadido el 22-nov-2026 para la cartera de 4H.",
+   "tipo": "cripto",
+   "decimales": 4,
+   "bitget": "SUIUSDT",
+   "series": {
+    "1h": {
+     "velas": 17433,
+     "desde": "2024-11-22",
+     "hasta": "2026-11-22T02:00Z",
+     "fuente": "Bitget SUIUSDT"
+    },
+    "4h": {
+     "velas": 7754,
+     "desde": "2023-05-03",
+     "hasta": "2026-11-22T00:00Z",
+     "fuente": "Bitget SUIUSDT"
+    },
+    "1d": {
+     "velas": 1294,
+     "desde": "2023-05-03",
+     "hasta": "2026-11-22T00:00Z",
+     "fuente": "Bitget SUIUSDT"
+    }
+   },
+   "ultimo": 0.6413,
+   "cambio_pct": -1.17
   }
  ]
 }
