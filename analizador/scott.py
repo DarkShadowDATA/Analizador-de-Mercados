@@ -42,6 +42,12 @@ class ParamsScott:
     comision_mercado: float = 0.0006  # taker
     deslizamiento: float = 0.0002     # en salidas a mercado (stop, salida final)
     solo: int = 0                 # 1 solo largos, -1 solo cortos, 0 ambos
+    # Niveles del indicador real "EMA y Pivotes ZS" (400 min, bloques desde 00:00 UTC):
+    #   None = pivotes de k velas (aproximación inicial)
+    #   "acumulado" = máx/mín del bloque de 400 min en curso hasta la vela anterior
+    #   "anterior"  = máx/mín del bloque de 400 min anterior (ya cerrado)
+    niveles: str | None = None
+    bloque_min: int = 400
 
 
 @dataclass
@@ -68,6 +74,30 @@ def _ema_escalera(close: pd.Series, n: int, regla: str | None) -> np.ndarray:
     return e.reindex(close.index, method="ffill").to_numpy()
 
 
+def niveles_zs(df: pd.DataFrame, modo: str, minutos: int = 400) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """Resistencia/soporte del indicador ZS sin mirar al futuro.
+
+    Los bloques de `minutos` reinician cada día a 00:00 UTC (00:00, 06:40, 13:20, 20:00-24:00).
+    """
+    idx = df.index
+    dia = idx.floor("D")
+    num = ((idx - dia) // pd.Timedelta(minutes=minutos)).astype(int)
+    clave = pd.Series(dia.strftime("%Y%m%d"), index=idx) + "-" + pd.Series(num, index=idx).astype(str)
+    h, l = df["high"], df["low"]
+    if modo == "acumulado":
+        res = h.groupby(clave.values).cummax().groupby(clave.values).shift(1)
+        sop = l.groupby(clave.values).cummin().groupby(clave.values).shift(1)
+    elif modo == "anterior":
+        g = pd.DataFrame({"k": clave.values, "h": h.values, "l": l.values})
+        ext = g.groupby("k", sort=False).agg(h=("h", "max"), l=("l", "min"))
+        prev = ext.shift(1)
+        res = pd.Series(prev["h"].reindex(clave.values).to_numpy(), index=idx)
+        sop = pd.Series(prev["l"].reindex(clave.values).to_numpy(), index=idx)
+    else:
+        raise ValueError(modo)
+    return res.to_numpy(dtype=float), sop.to_numpy(dtype=float), clave.to_numpy()
+
+
 def simular(df: pd.DataFrame, p: ParamsScott | None = None) -> list[OpScott]:
     p = p or ParamsScott()
     o, h, l, c = (df[x].to_numpy() for x in ("open", "high", "low", "close"))
@@ -84,6 +114,10 @@ def simular(df: pd.DataFrame, p: ParamsScott | None = None) -> list[OpScott]:
     min_c = pd.Series(l).rolling(ventana, center=True).min().to_numpy()
     es_alto = (h == max_c)
     es_bajo = (l == min_c)
+
+    if p.niveles:
+        res_zs, sop_zs, bloque = niveles_zs(df, p.niveles, p.bloque_min)
+    usados_zs: set = set()
 
     ops: list[OpScott] = []
     ultimo_alto = ultimo_bajo = None    # (posición, precio) del último pivote confirmado
@@ -169,7 +203,28 @@ def simular(df: pd.DataFrame, p: ParamsScott | None = None) -> list[OpScott]:
                 orden = None
 
         # 4) Nueva señal al cierre de t
-        if pos is None and orden is None and t > 0 and np.isfinite(a[t]):
+        if p.niveles and pos is None and orden is None and t > 0 and np.isfinite(a[t]):
+            # Alertas del indicador: SELL si tocó resistencia y cerró bajo la EMA; BUY simétrico
+            for d in (-1, 1):
+                if p.solo and d != p.solo or (bloque[t], d) in usados_zs:
+                    continue
+                nivel = res_zs[t] if d < 0 else sop_zs[t]
+                if not np.isfinite(nivel):
+                    continue
+                toca = h[t] >= nivel if d < 0 else l[t] <= nivel
+                cierra = c[t] < ema[t] if d < 0 else c[t] > ema[t]
+                if not (toca and cierra):
+                    continue
+                precio = ema[t]
+                extremo = h[t] if d < 0 else l[t]
+                stop = extremo + p.colchon_atr * a[t] if d < 0 else extremo - p.colchon_atr * a[t]
+                riesgo = (stop - precio) * -d
+                if riesgo <= 0 or riesgo / precio * 100 < p.riesgo_min_pct:
+                    continue
+                orden = dict(d=d, precio=precio, stop=stop, t_s=t, piv=extremo)
+                usados_zs.add((bloque[t], d))
+                break
+        elif pos is None and orden is None and t > 0 and np.isfinite(a[t]):
             for d, piv, usado in ((-1, ultimo_alto, usado_alto), (1, ultimo_bajo, usado_bajo)):
                 if p.solo and d != p.solo:
                     continue

@@ -24,6 +24,12 @@ VARIANTES = {
     "stop >= 0,5 %": dict(riesgo_min_pct=0.5),
     "solo largos": dict(solo=1),
     "solo cortos": dict(solo=-1),
+    # Reglas reales del indicador "EMA y Pivotes ZS" (niveles de 400 min, 22-nov-2026)
+    "ZS bloque en curso": dict(niveles="acumulado"),
+    "ZS bloque anterior": dict(niveles="anterior"),
+    "ZS anterior, stop 0,5 ATR": dict(niveles="anterior", colchon_atr=0.5),
+    "ZS anterior, sin costos": dict(niveles="anterior", colchon_atr=0.5,
+                                    comision_limite=0, comision_mercado=0, deslizamiento=0),
 }
 
 
