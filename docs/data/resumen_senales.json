@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T03:09:22Z",
+ "generado": "2026-11-22T07:58:43Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -1083,7 +1083,7 @@
    "mercado": "inj",
    "nombre": "Injective",
    "tf": "1d",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 5,
     "aciertos_pct": 20.0,
