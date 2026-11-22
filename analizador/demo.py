@@ -20,7 +20,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import backtest, indicadores, senales
+from . import backtest, indicadores, rango_asia, senales
 from .almacen import DIR_DATOS, cargar, solo_cerradas
 from .bitget_api import BitgetDemo, ErrorBitget
 from .mercados import por_id
@@ -38,6 +38,12 @@ class Estrategia:
     mercado: str
     tf: str
     bitget: str | None = None   # contrato de la demo de Bitget, si existe
+    estrategia: str = "wyckoff"  # "wyckoff" (4H, la que dio ventaja) o "asia" (experimento de 5m)
+
+    @property
+    def prioridad(self) -> int:
+        # Con un solo contrato por moneda, la 4H manda: puede cerrar una posición del experimento
+        return 1 if self.estrategia == "wyckoff" else 0
 
 
 # 22-nov-2026: rango de 30 velas; 4H fue la única temporalidad positiva en el histórico
@@ -48,6 +54,10 @@ CARTERA = [
     Estrategia("oro", "4h"),
     Estrategia("sp500", "4h"),
     Estrategia("nasdaq100", "4h"),
+    # 22-nov-2026, decisión de Alejandro: experimento de 5m para tener operaciones diarias.
+    # El backtest de 1 año da -0,26 a -0,37R por operación: se mide en vivo, no se espera ganancia.
+    Estrategia("eth", "5m", bitget="SETHSUSDT", estrategia="asia"),
+    Estrategia("btc", "5m", bitget="SBTCSUSDT", estrategia="asia"),
 ]
 
 
@@ -57,6 +67,8 @@ def operaciones_papel(e: Estrategia, reglas: backtest.ReglasBT, params: senales.
     df = cargar(e.mercado, e.tf)
     if df.empty:
         return []
+    if e.estrategia == "asia":
+        return rango_asia.simular(df, INICIO, ahora=ahora)
     x = indicadores.calcular(df)
     cerr = solo_cerradas(df, e.tf, ahora)
     lista = senales.detectar(cerr, params, x.loc[cerr.index])
@@ -95,6 +107,22 @@ def sincronizar_bitget(cli: BitgetDemo, e: Estrategia, ops: list[backtest.Operac
     abierta = next((op for op in ops if op.motivo_salida == "abierta"), None)
     pos = cli.posicion(e.bitget)
     ya_enviadas = {r.get("id_cliente") for r in registro if r.get("accion") == "abrir"}
+    omitidas = {r.get("id_cliente") for r in registro if r.get("accion") == "omitir"}
+
+    # ¿Qué estrategia abrió la posición que hay en este contrato?
+    aperturas = [r for r in registro if r.get("accion") == "abrir" and r.get("simbolo") == e.bitget]
+    duena = aperturas[-1].get("tf") if aperturas else None
+    if pos is not None and duena not in (None, e.tf):
+        otra = next((x for x in CARTERA if x.bitget == e.bitget and x.tf == duena), None)
+        nueva = abierta is not None and id_cliente(e, abierta) not in ya_enviadas
+        if nueva and otra is not None and e.prioridad > otra.prioridad:
+            cli.cerrar(e.bitget)
+            anotar("cerrar", motivo=f"la señal de {e.tf} tiene prioridad sobre la operación de {duena}")
+            pos = None
+        else:
+            if nueva and id_cliente(e, abierta) not in omitidas:
+                anotar("omitir", id_cliente=id_cliente(e, abierta), motivo=f"contrato ocupado por {duena}")
+            return {"posicion": f"contrato ocupado por la estrategia de {duena}"}
 
     if abierta is None:
         if pos is not None:
@@ -111,7 +139,7 @@ def sincronizar_bitget(cli: BitgetDemo, e: Estrategia, ops: list[backtest.Operac
             pos = None
         else:
             return {"posicion": pos}
-    if oid in ya_enviadas:
+    if oid in ya_enviadas or oid in omitidas:
         # Ya se abrió y Bitget la cerró con su stop/objetivo: no se repite
         return {"posicion": None}
 
@@ -156,10 +184,12 @@ def correr(cli: BitgetDemo | None) -> dict:
         "estrategias": [],
     }
     todas: list[tuple[str, float]] = []
+    experimento: list[tuple[str, float]] = []
     for e in CARTERA:
         m = por_id(e.mercado)
         fila = {"mercado": e.mercado, "nombre": m.nombre, "tf": e.tf, "decimales": m.decimales,
-                "ejecucion": f"Bitget demo {e.bitget}" if e.bitget else "Simulada (Bitget demo no tiene este mercado)"}
+                "ejecucion": f"Bitget demo {e.bitget}" if e.bitget else "Simulada (Bitget demo no tiene este mercado)",
+                "estrategia": e.estrategia, "experimento": e.estrategia != "wyckoff"}
         try:
             ops = operaciones_papel(e, reglas, params)
         except Exception as ex:  # noqa: BLE001
@@ -169,7 +199,8 @@ def correr(cli: BitgetDemo | None) -> dict:
             continue
         fila["operaciones"] = backtest.a_dicts(ops)
         fila["metricas"] = backtest.metricas(ops, reglas)
-        todas += [(op.fecha_salida, op.r) for op in ops if op.motivo_salida != "abierta"]
+        destino = todas if e.estrategia == "wyckoff" else experimento
+        destino += [(op.fecha_salida, op.r) for op in ops if op.motivo_salida != "abierta"]
         if e.bitget and cli is not None:
             try:
                 fila["bitget"] = sincronizar_bitget(cli, e, ops, reglas, registro)
@@ -188,6 +219,11 @@ def correr(cli: BitgetDemo | None) -> dict:
         curva.append([fecha, round(capital, 2)])
     salida["capital"] = round(capital, 2)
     salida["curva"] = curva
+    # El experimento de 5m lleva su propia cuenta para no mezclarse con la cartera de 4H
+    cap_x = CAPITAL_INICIAL
+    for _, r in sorted(experimento):
+        cap_x *= 1 + reglas.riesgo_pct / 100 * r
+    salida["capital_experimento"] = round(cap_x, 2)
 
     if cli is not None:
         simbolo = next((e.bitget for e in CARTERA if e.bitget), None)

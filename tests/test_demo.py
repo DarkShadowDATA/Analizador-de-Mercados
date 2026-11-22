@@ -82,3 +82,27 @@ def test_cartera_simulada_solo_desde_inicio(monkeypatch):
     assert ops and all(o.fecha_senal >= "2025-01-01" for o in ops)
     monkeypatch.setattr(demo, "INICIO", "2100-01-01T00:00:00Z")
     assert demo.operaciones_papel(demo.Estrategia("eth", "4h"), backtest.ReglasBT(), demo.senales.Parametros()) == []
+
+
+E5 = demo.Estrategia("eth", "5m", "SETHSUSDT", estrategia="asia")
+
+
+def test_5m_no_toca_posicion_de_4h():
+    reg = [{"accion": "abrir", "simbolo": "SETHSUSDT", "tf": "4h", "id_cliente": "x"}]
+    cli = ClienteFalso(pos={"holdSide": "long", "total": "0.4"})
+    res = demo.sincronizar_bitget(cli, E5, [op(d=-1)], backtest.ReglasBT(), reg)
+    assert cli.llamadas == [] and "ocupado" in res["posicion"]
+    # y no repite el aviso en la siguiente corrida
+    n = len(reg)
+    demo.sincronizar_bitget(cli, E5, [op(d=-1)], backtest.ReglasBT(), reg)
+    assert len(reg) == n
+    # sin señal abierta tampoco cierra la posición de 4H
+    demo.sincronizar_bitget(cli, E5, [op("stop")], backtest.ReglasBT(), reg)
+    assert cli.llamadas == []
+
+
+def test_4h_tiene_prioridad_sobre_5m():
+    reg = [{"accion": "abrir", "simbolo": "SETHSUSDT", "tf": "5m", "id_cliente": "x"}]
+    cli = ClienteFalso(pos={"holdSide": "short", "total": "0.4"})
+    demo.sincronizar_bitget(cli, E, [op()], backtest.ReglasBT(), reg)
+    assert cli.llamadas[0] == "cerrar" and cli.llamadas[-1][0] == "abrir"

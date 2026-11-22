@@ -7,8 +7,9 @@ window.Analisis = (() => {
 
   const $ = (id) => document.getElementById(id);
   const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
-  const NOMBRE = { spring: "Spring", upthrust: "Upthrust", test_spring: "Test de spring", test_upthrust: "Test de upthrust" };
-  const NOMBRE_TF = { "1h": "1H", "4h": "4H", "1d": "1D" };
+  const NOMBRE = { spring: "Spring", upthrust: "Upthrust", test_spring: "Test de spring", test_upthrust: "Test de upthrust",
+    spring_asia: "Spring del rango asiático", upthrust_asia: "Upthrust del rango asiático" };
+  const NOMBRE_TF = { "5m": "5m", "1h": "1H", "4h": "4H", "1d": "1D" };
   const SALIDA = { objetivo: "Objetivo", stop: "Stop", tiempo: "Tiempo", abierta: "Abierta" };
 
   let app, rsiChart, serieRsi, seriesNiveles = {}, serieMedia;
@@ -304,10 +305,14 @@ window.Analisis = (() => {
       `${num(d.riesgo_pct, 0)} % por operación. Actualizado: ${new Date(d.generado).toLocaleString("es-ES", { dateStyle: "medium", timeStyle: "short" })}.</p>` +
       `<div class="kpis">` +
       k("Cartera simulada", num(d.capital, 0) + " USD") +
-      k("Resultado", signo(cambio, 2) + " %", c(cambio)) +
+      k("Resultado 4H", signo(cambio, 2) + " %", c(cambio)) +
+      (d.capital_experimento != null ? k("Experimento 5m", signo((d.capital_experimento / d.capital_inicial - 1) * 100, 2) + " %",
+        c(d.capital_experimento - d.capital_inicial)) : "") +
       k("Bitget demo", estadoBitget, bg.conectado && !bg.error ? "sube" : "") +
       (bg.capital != null ? k("Capital en Bitget demo", num(bg.capital, 2) + " SUSDT") : "") +
-      `</div>`;
+      `</div>` +
+      (d.capital_experimento != null ? `<p class="nota">El experimento de 5m (falsa ruptura del rango asiático en BTC y ETH) va aparte: ` +
+        `da operaciones casi a diario, pero en el backtest de un año perdió unas 0,3R por operación por las comisiones. Sirve para verlo en vivo, no para ganar.</p>` : "");
 
     html += "<h4>Estrategias</h4><div class='tabla-scroll'><table class='tabla'><thead><tr>" +
       "<th class='izq'>Mercado</th><th class='izq'>TF</th><th class='izq'>Dónde se ejecuta</th><th>Ops.</th>" +
@@ -319,7 +324,8 @@ window.Analisis = (() => {
         const rt = cerradas.reduce((a, o) => a + o.r, 0);
         const pos = ab ? `<span class="${ab.direccion > 0 ? "sube" : "baja"}">${ab.direccion > 0 ? "Larga" : "Corta"}</span> ` +
           `desde ${num(ab.entrada, e.decimales)} · stop ${num(ab.stop, e.decimales)} · objetivo ${num(ab.objetivo, e.decimales)}` : "Sin posición";
-        return `<tr class="clic" data-m="${e.mercado}" data-tf="${e.tf}"><td>${esc(e.nombre)}</td><td class="izq">${NOMBRE_TF[e.tf]}</td>` +
+        const fila = e.experimento ? "<tr>" : `<tr class="clic" data-m="${e.mercado}" data-tf="${e.tf}">`;
+        return fila + `<td>${esc(e.nombre)}</td><td class="izq">${NOMBRE_TF[e.tf] || e.tf}${e.experimento ? " (experimento)" : ""}</td>` +
           `<td class="izq">${esc(e.ejecucion)}</td><td>${cerradas.length}</td>` +
           `<td class="${c(rt)}">${cerradas.length ? signo(rt) : "—"}</td><td class="izq">${e.error ? "Error: " + esc(e.error) : pos}</td></tr>`;
       }).join("") + "</tbody></table></div>";
@@ -338,7 +344,7 @@ window.Analisis = (() => {
     if (reg.length) {
       html += "<h4>Órdenes en Bitget demo</h4><ol class='lista-senales'>" + reg.map((r) =>
         `<li><div class="cab"><span>${esc(r.accion)} · ${esc(r.simbolo || "")}</span><span class="pts">${fecha(r.fecha, "1h")}</span></div>` +
-        `<div class="mot">${esc(r.motivo || (r.cantidad ? `cantidad ${r.cantidad} · stop ${r.stop} · objetivo ${r.objetivo}` : ""))}</div></li>`).join("") + "</ol>";
+        `<div class="mot">${esc(r.tf ? (NOMBRE_TF[r.tf] || r.tf) + " · " : "")}${esc(r.motivo || (r.cantidad ? `cantidad ${r.cantidad} · stop ${r.stop} · objetivo ${r.objetivo}` : ""))}</div></li>`).join("") + "</ol>";
     }
     $("demo-cuerpo").innerHTML = html;
     $("demo-cuerpo").querySelectorAll("tr.clic").forEach((tr) => { tr.onclick = () => app.seleccionar(tr.dataset.m, tr.dataset.tf); });
