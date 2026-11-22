@@ -59,6 +59,42 @@ MERCADOS: list[Mercado] = [
         yahoo="ETH-USD",
         bitget="ETHUSDT",
     ),
+    Mercado(
+        id="op",
+        nombre="Optimism",
+        descripcion="OP/USDT spot de Bitget (respaldo: OP-USD de Yahoo). Añadido el 22-nov-2026 para la cartera de 4H.",
+        tipo="cripto",
+        yahoo="OP-USD",
+        bitget="OPUSDT",
+        decimales=4,
+    ),
+    Mercado(
+        id="inj",
+        nombre="Injective",
+        descripcion="INJ/USDT spot de Bitget (respaldo: INJ-USD de Yahoo). Añadido el 22-nov-2026 para la cartera de 4H.",
+        tipo="cripto",
+        yahoo="INJ-USD",
+        bitget="INJUSDT",
+        decimales=3,
+    ),
+    Mercado(
+        id="bch",
+        nombre="Bitcoin Cash",
+        descripcion="BCH/USDT spot de Bitget (respaldo: BCH-USD de Yahoo). Añadido el 22-nov-2026 para la cartera de 4H.",
+        tipo="cripto",
+        yahoo="BCH-USD",
+        bitget="BCHUSDT",
+        decimales=2,
+    ),
+    Mercado(
+        id="sui",
+        nombre="Sui",
+        descripcion="SUI/USDT spot de Bitget (respaldo: SUI20947-USD de Yahoo). Añadido el 22-nov-2026 para la cartera de 4H.",
+        tipo="cripto",
+        yahoo="SUI20947-USD",
+        bitget="SUIUSDT",
+        decimales=4,
+    ),
 ]
 
 # Temporalidades disponibles. "segundos" es la duración de cada vela.

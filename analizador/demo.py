@@ -54,6 +54,13 @@ CARTERA = [
     Estrategia("oro", "4h"),
     Estrategia("sp500", "4h"),
     Estrategia("nasdaq100", "4h"),
+    # 22-nov-2026: criptos extra de Bitget que ganaron en 4H en las dos mitades de su histórico
+    # (scripts/backtest_extra_4h.py). DOGE quedó fuera: mejor R total pero 1ª mitad negativa. Ojo: de 19 criptos probadas el promedio fue ~0R, así que elegir las
+    # mejores tiene algo de suerte; la demo dirá si se sostienen. Solo en papel (no hay demo en Bitget).
+    Estrategia("op", "4h"),
+    Estrategia("inj", "4h"),
+    Estrategia("bch", "4h"),
+    Estrategia("sui", "4h"),
     # 22-nov-2026, decisión de Alejandro: experimento de 5m para tener operaciones diarias.
     # El backtest de 1 año da -0,26 a -0,37R por operación: se mide en vivo, no se espera ganancia.
     Estrategia("eth", "5m", bitget="SETHSUSDT", estrategia="asia"),
