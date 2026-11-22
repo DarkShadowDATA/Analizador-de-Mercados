@@ -13,7 +13,8 @@ Decisión de Alejandro: "Las dos cosas a la vez" (demo desde el lunes 23-nov con
 - [x] 2. analizador/bitget_api.py + analizador/demo.py + scripts/operar_demo.py (19 pruebas pasan)
 - [x] 3. Sección "Cuenta demo" en la web
 - [ ] 4. Probar con las claves reales de la demo ← SIGUIENTE (esperando a Alejandro)
-- [ ] 5. Probar reglas de ScottFDX / ZcoinTv (esperando que las pase)
+- [x] 5a. ScottFDX (video KddTTcjBHPI, 22-nov): analizador/scott.py + scripts/backtest_scott.py. 1 año 5m BTC/ETH: sin costos ~0R, con costos −0,3/−0,5R; TP1 solo ~35 % (no 75 %). Ninguna variante positiva (k3/k10, escalera 15m, stop mín 0,5 %, solo largos/cortos, filtro EMA200 1h).
+- [ ] 5b. ZcoinTv / más material de ScottFDX (indicador "pupú", filtro de acumulación en 1H) si Alejandro lo pasa
 
 ## Paso 1 (terminado 2026-11-21)
 Web: https://darkshadowdata.github.io/Analizador-de-Mercados/ · datos cada hora por Actions.
