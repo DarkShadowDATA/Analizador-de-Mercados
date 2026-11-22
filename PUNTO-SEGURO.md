@@ -4,7 +4,7 @@ Decisión de Alejandro: "Las dos cosas a la vez" (demo desde el lunes 23-nov con
 
 ## Decisiones tomadas (no volver a preguntar)
 - Bitget demo (SUSDT-FUTURES) solo tiene SBTCSUSDT y SETHSUSDT: S&P, Nasdaq y oro van en cartera simulada propia.
-- Cartera: ETH 4H (Bitget demo SETHSUSDT), oro 4H, S&P 500 1D, Nasdaq 1H. Señales desde 2026-11-23 00:00 UTC.
+- 22-nov: rango de 30 velas. Cartera solo 4H: ETH y BTC (Bitget demo), oro, S&P 500, Nasdaq (simulados). Señales desde 2026-11-23 00:00 UTC.
 - Claves como GitHub secrets BITGET_API_KEY / BITGET_API_SECRET / BITGET_PASSPHRASE.
 - Riesgo 1 % por operación, margen aislado, apalancamiento 5, stop y objetivo puestos en Bitget.
 

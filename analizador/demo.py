@@ -40,12 +40,14 @@ class Estrategia:
     bitget: str | None = None   # contrato de la demo de Bitget, si existe
 
 
-# Gráficos que dieron positivo en el backtest del 21-nov-2026 (pocas operaciones: validar)
+# 22-nov-2026: rango de 30 velas; 4H fue la única temporalidad positiva en el histórico
+# antiguo y en el reciente (sobre todo por ETH). Todo en 4H.
 CARTERA = [
     Estrategia("eth", "4h", bitget="SETHSUSDT"),
+    Estrategia("btc", "4h", bitget="SBTCSUSDT"),
     Estrategia("oro", "4h"),
-    Estrategia("sp500", "1d"),
-    Estrategia("nasdaq100", "1h"),
+    Estrategia("sp500", "4h"),
+    Estrategia("nasdaq100", "4h"),
 ]
 
 

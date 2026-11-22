@@ -35,7 +35,7 @@ GitHub Actions (cada hora)
 - `analizador/backtest.py`: entra en la apertura siguiente, stop 1 ATR tras el extremo, objetivo al otro lado del área de valor (1R a 3R), solo a favor de la media de 200, con comisiones.
 - `scripts/generar_senales.py`: genera `docs/data/analisis_*.json` y `docs/data/resumen_senales.json` para la web (y para los pasos 3 y 4).
 
-**Resultado honesto del primer backtest (21 nov 2026):** en conjunto las reglas no tienen ventaja (unas −0,1R por operación con costos). Algunos gráficos salen positivos (ETH 4H, oro 4H, S&P 500 1D, Nasdaq 1H) pero con pocas operaciones. No usar con dinero real hasta mejorarlas.
+**Resultados (22 nov 2026):** con rango de 40 velas, en conjunto no había ventaja (~−0,1R por operación). Con **rango de 30 velas en 4H** sale positivo en el histórico antiguo (+0,26R) y en el reciente (+0,24R), con ~55 % de aciertos; casi toda la ganancia viene de ETH 4H. 1H es negativo con cualquier rango (las comisiones pesan más). La demo opera solo 4H. No usar con dinero real hasta validarlo en demo.
 
 ## Usarlo en tu PC (Windows)
 

@@ -28,7 +28,7 @@ from . import indicadores
 
 @dataclass
 class Parametros:
-    rango_barras: int = 40        # velas que definen el rango (soporte/resistencia)
+    rango_barras: int = 30        # velas que definen el rango (soporte/resistencia); 30 fue lo mejor en 4H (22-nov-2026)
     rango_min_atr: float = 3.0    # ancho mínimo del rango en ATR
     rango_max_atr: float = 12.0   # ancho máximo (más que esto es tendencia, no rango)
     lateralidad: float = 0.5      # |cambio neto en el rango| / ancho del rango (menos = más lateral)
