@@ -1,14 +1,16 @@
 name: Demo cada 5 minutos
 
-# Corre la cartera demo (4H + experimento de 5m) cada 5 minutos. GitHub puede retrasar
-# los cron unos minutos; las señales de 5m se toman sobre velas cerradas y se entra a mercado.
+# Los cron de GitHub se retrasan horas en repos gratuitos, así que la demo corre en un
+# bucle dentro de un job de ~5,5 h (scripts/bucle_demo.sh) que se relanza solo al terminar.
+# El cron horario es solo un respaldo por si la cadena se corta.
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "7 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: demo
@@ -17,7 +19,7 @@ concurrency:
 jobs:
   demo:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -25,18 +27,10 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Velas de 5 minutos
-        run: python scripts/velas_5m.py
-      - name: Operar en demo
+      - name: Bucle de la demo
         env:
+          GH_TOKEN: ${{ github.token }}
           BITGET_API_KEY: ${{ secrets.BITGET_API_KEY }}
           BITGET_API_SECRET: ${{ secrets.BITGET_API_SECRET }}
           BITGET_PASSPHRASE: ${{ secrets.BITGET_PASSPHRASE }}
-        run: python scripts/operar_demo.py
-      - name: Guardar
-        run: |
-          git config user.name "analizador-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/btc/5m.csv data/eth/5m.csv data/demo docs/data/demo.json
-          git commit -q -m "Demo $(date -u +'%Y-%m-%d %H:%M') UTC" || exit 0
-          for i in 1 2 3; do git pull -q --rebase origin main && git push -q && break; sleep 5; done
+        run: bash scripts/bucle_demo.sh
