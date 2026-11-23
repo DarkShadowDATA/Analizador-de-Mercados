@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T14:21:56Z",
+ "generado": "2026-11-23T15:21:55Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -393,26 +393,7 @@
      "volumen seco (0.4x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-23T11:00:00Z",
-    "tipo": "test_upthrust",
-    "direccion": -1,
-    "cierre": 3619.3999,
-    "nivel": 3636.3999,
-    "extremo": 3636.3999,
-    "poc": 3578.743713,
-    "vah": 3630.317505,
-    "val": 3502.8999,
-    "rsi": 57.648799,
-    "vol_rel": 0.407332,
-    "atr": 24.111205,
-    "puntos": 3,
-    "motivos": [
-     "retesteo del máximo con menos volumen",
-     "volumen seco (0.4x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "oro",
@@ -836,7 +817,7 @@
    "mercado": "op",
    "nombre": "Optimism",
    "tf": "1h",
-   "tendencia": "alcista",
+   "tendencia": "bajista",
    "total": {
     "operaciones": 90,
     "aciertos_pct": 34.4,
