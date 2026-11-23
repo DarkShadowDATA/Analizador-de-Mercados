@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T20:21:51Z",
+ "generado": "2026-11-23T21:21:52Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -847,22 +847,21 @@
     "hasta": "2026-11-11"
    },
    "ultima_senal": {
-    "fecha": "2026-11-22T08:00:00Z",
-    "tipo": "upthrust",
-    "direccion": -1,
-    "cierre": 0.07083,
-    "nivel": 0.07124,
-    "extremo": 0.07143,
-    "poc": 0.070042,
-    "vah": 0.07072,
-    "val": 0.065838,
-    "rsi": 57.218283,
-    "vol_rel": 1.771417,
-    "atr": 0.000839,
+    "fecha": "2026-11-23T20:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 0.06999,
+    "nivel": 0.06994,
+    "extremo": 0.06978,
+    "poc": 0.071792,
+    "vah": 0.073058,
+    "val": 0.070525,
+    "rsi": 38.575303,
+    "vol_rel": 1.119619,
+    "atr": 0.001089,
     "puntos": 2,
     "motivos": [
-     "nivel en zona de volumen (VAH del perfil anclado)",
-     "sacudida con volumen alto (1.8x): esperar test"
+     "nivel en zona de volumen (VAL del perfil anclado)"
     ]
    },
    "senal_activa": null
