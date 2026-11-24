@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T10:54:09Z",
+ "generado": "2026-11-24T11:21:55Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -523,26 +523,46 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T03:00:00Z",
+    "fecha": "2026-11-24T10:00:00Z",
     "tipo": "spring",
     "direccion": 1,
-    "cierre": 60334.21,
-    "nivel": 60076.41,
-    "extremo": 59456.21,
-    "poc": 61320.833875,
-    "vah": 61899.51025,
-    "val": 60484.968,
-    "rsi": 39.077692,
-    "vol_rel": 1.69261,
-    "atr": 711.253196,
-    "puntos": 3,
+    "cierre": 59789.13,
+    "nivel": 59456.21,
+    "extremo": 59383.31,
+    "poc": 61404.777375,
+    "vah": 61991.655,
+    "val": 59774.56175,
+    "rsi": 34.386292,
+    "vol_rel": 0.706242,
+    "atr": 609.346265,
+    "puntos": 4,
     "motivos": [
-     "divergencia de RSI",
+     "RSI sobreventa (34)",
      "nivel en zona de volumen (VAL del perfil anclado)",
-     "sacudida con volumen alto (1.7x): esperar test"
+     "perforación sin volumen (0.7x)"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-24T10:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 59789.13,
+    "nivel": 59456.21,
+    "extremo": 59383.31,
+    "poc": 61404.777375,
+    "vah": 61991.655,
+    "val": 59774.56175,
+    "rsi": 34.386292,
+    "vol_rel": 0.706242,
+    "atr": 609.346265,
+    "puntos": 4,
+    "motivos": [
+     "RSI sobreventa (34)",
+     "nivel en zona de volumen (VAL del perfil anclado)",
+     "perforación sin volumen (0.7x)"
+    ],
+    "velas_desde": 0
+   }
   },
   {
    "mercado": "btc",
@@ -686,22 +706,21 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T04:00:00Z",
-    "tipo": "spring",
+    "fecha": "2026-11-24T10:00:00Z",
+    "tipo": "test_spring",
     "direccion": 1,
-    "cierre": 1699.86,
-    "nivel": 1696.61,
+    "cierre": 1684.28,
+    "nivel": 1668.76,
     "extremo": 1668.76,
-    "poc": 1719.4865,
-    "vah": 1756.98,
-    "val": 1695.226,
-    "rsi": 41.84334,
-    "vol_rel": 0.582652,
-    "atr": 22.199008,
+    "poc": 1723.8975,
+    "vah": 1765.802,
+    "val": 1677.582,
+    "rsi": 37.142504,
+    "vol_rel": 0.817291,
+    "atr": 19.027081,
     "puntos": 2,
     "motivos": [
-     "nivel en zona de volumen (VAL del perfil anclado)",
-     "sacudida con volumen alto (1.8x): esperar test"
+     "retesteo del mínimo con menos volumen"
     ]
    },
    "senal_activa": null
@@ -848,22 +867,21 @@
     "hasta": "2026-11-11"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T03:00:00Z",
-    "tipo": "spring",
+    "fecha": "2026-11-24T10:00:00Z",
+    "tipo": "test_spring",
     "direccion": 1,
-    "cierre": 0.07038,
-    "nivel": 0.06929,
+    "cierre": 0.06972,
+    "nivel": 0.06893,
     "extremo": 0.06893,
-    "poc": 0.071739,
-    "vah": 0.072676,
-    "val": 0.069781,
-    "rsi": 44.895523,
-    "vol_rel": 1.21906,
-    "atr": 0.001049,
-    "puntos": 3,
+    "poc": 0.071569,
+    "vah": 0.072505,
+    "val": 0.069441,
+    "rsi": 40.921806,
+    "vol_rel": 0.858733,
+    "atr": 0.000964,
+    "puntos": 2,
     "motivos": [
-     "divergencia de RSI",
-     "nivel en zona de volumen (VAL del perfil anclado)"
+     "retesteo del mínimo con menos volumen"
     ]
    },
    "senal_activa": null
@@ -1009,22 +1027,21 @@
     "hasta": "2026-11-17"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T03:00:00Z",
+    "fecha": "2026-11-24T10:00:00Z",
     "tipo": "spring",
     "direccion": 1,
-    "cierre": 6.21,
-    "nivel": 6.081,
-    "extremo": 6.074,
-    "poc": 6.227887,
-    "vah": 6.59485,
-    "val": 6.12135,
-    "rsi": 41.308155,
-    "vol_rel": 0.349956,
-    "atr": 0.131361,
-    "puntos": 3,
+    "cierre": 6.075,
+    "nivel": 6.074,
+    "extremo": 6.046,
+    "poc": 6.228813,
+    "vah": 6.67975,
+    "val": 6.167875,
+    "rsi": 36.131519,
+    "vol_rel": 0.532901,
+    "atr": 0.111161,
+    "puntos": 2,
     "motivos": [
-     "nivel en zona de volumen (VAL del perfil anclado)",
-     "perforación sin volumen (0.3x)"
+     "perforación sin volumen (0.5x)"
     ]
    },
    "senal_activa": null
@@ -1170,25 +1187,44 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-23T09:00:00Z",
-    "tipo": "test_upthrust",
-    "direccion": -1,
-    "cierre": 199.8,
-    "nivel": 200.8,
-    "extremo": 200.8,
-    "poc": 198.2625,
-    "vah": 200.1,
-    "val": 196.95,
-    "rsi": 56.687191,
-    "vol_rel": 0.311938,
-    "atr": 1.67667,
+    "fecha": "2026-11-24T10:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 197.8,
+    "nivel": 197.1,
+    "extremo": 196.9,
+    "poc": 200.24625,
+    "vah": 206.6925,
+    "val": 198.0975,
+    "rsi": 40.602403,
+    "vol_rel": 0.409848,
+    "atr": 2.323675,
     "puntos": 3,
     "motivos": [
-     "retesteo del máximo con menos volumen",
-     "volumen seco (0.3x)"
+     "nivel en zona de volumen (VAL del perfil anclado)",
+     "perforación sin volumen (0.4x)"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-24T10:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 197.8,
+    "nivel": 197.1,
+    "extremo": 196.9,
+    "poc": 200.24625,
+    "vah": 206.6925,
+    "val": 198.0975,
+    "rsi": 40.602403,
+    "vol_rel": 0.409848,
+    "atr": 2.323675,
+    "puntos": 3,
+    "motivos": [
+     "nivel en zona de volumen (VAL del perfil anclado)",
+     "perforación sin volumen (0.4x)"
+    ],
+    "velas_desde": 0
+   }
   },
   {
    "mercado": "bch",
@@ -1332,26 +1368,44 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-22T12:00:00Z",
-    "tipo": "upthrust",
-    "direccion": -1,
-    "cierre": 0.6586,
-    "nivel": 0.6637,
-    "extremo": 0.6688,
-    "poc": 0.639474,
-    "vah": 0.654642,
-    "val": 0.62026,
-    "rsi": 60.245049,
-    "vol_rel": 2.221124,
-    "atr": 0.008422,
+    "fecha": "2026-11-24T10:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 0.6576,
+    "nivel": 0.6545,
+    "extremo": 0.6528,
+    "poc": 0.667451,
+    "vah": 0.70569,
+    "val": 0.657023,
+    "rsi": 39.731537,
+    "vol_rel": 0.434176,
+    "atr": 0.009739,
     "puntos": 3,
     "motivos": [
-     "divergencia de RSI",
-     "nivel en zona de volumen (VAH del perfil anclado)",
-     "sacudida con volumen alto (2.2x): esperar test"
+     "nivel en zona de volumen (VAL del perfil anclado)",
+     "perforación sin volumen (0.4x)"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-24T10:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 0.6576,
+    "nivel": 0.6545,
+    "extremo": 0.6528,
+    "poc": 0.667451,
+    "vah": 0.70569,
+    "val": 0.657023,
+    "rsi": 39.731537,
+    "vol_rel": 0.434176,
+    "atr": 0.009739,
+    "puntos": 3,
+    "motivos": [
+     "nivel en zona de volumen (VAL del perfil anclado)",
+     "perforación sin volumen (0.4x)"
+    ],
+    "velas_desde": 0
+   }
   },
   {
    "mercado": "sui",

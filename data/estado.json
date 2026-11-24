@@ -2,181 +2,181 @@
   "sp500": {
     "1h": {
       "fuente": "Yahoo ES=F",
-      "velas": 13764,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:53:57Z"
+      "velas": 13765,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:45Z"
     },
     "4h": {
       "fuente": "Yahoo ES=F",
       "velas": 3728,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:53:57Z"
+      "actualizado": "2026-11-24T11:21:45Z"
     },
     "1d": {
       "fuente": "Yahoo ES=F",
       "velas": 6613,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:53:57Z"
+      "actualizado": "2026-11-24T11:21:45Z"
     }
   },
   "nasdaq100": {
     "1h": {
       "fuente": "Yahoo NQ=F",
-      "velas": 13761,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:53:58Z"
+      "velas": 13762,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:45Z"
     },
     "4h": {
       "fuente": "Yahoo NQ=F",
       "velas": 3726,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:53:58Z"
+      "actualizado": "2026-11-24T11:21:45Z"
     },
     "1d": {
       "fuente": "Yahoo NQ=F",
       "velas": 6613,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:53:58Z"
+      "actualizado": "2026-11-24T11:21:46Z"
     }
   },
   "oro": {
     "1h": {
       "fuente": "Yahoo GC=F",
-      "velas": 13794,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:53:59Z"
+      "velas": 13795,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:46Z"
     },
     "4h": {
       "fuente": "Yahoo GC=F",
       "velas": 3734,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:53:59Z"
+      "actualizado": "2026-11-24T11:21:46Z"
     },
     "1d": {
       "fuente": "Yahoo GC=F",
       "velas": 6585,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:53:59Z"
+      "actualizado": "2026-11-24T11:21:46Z"
     }
   },
   "btc": {
     "1h": {
       "fuente": "Bitget BTCUSDT",
-      "velas": 17500,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:54:00Z"
+      "velas": 17501,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:47Z"
     },
     "4h": {
       "fuente": "Bitget BTCUSDT",
       "velas": 13152,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:54:00Z"
+      "actualizado": "2026-11-24T11:21:47Z"
     },
     "1d": {
       "fuente": "Bitget BTCUSDT",
       "velas": 2989,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:54:00Z"
+      "actualizado": "2026-11-24T11:21:47Z"
     }
   },
   "eth": {
     "1h": {
       "fuente": "Bitget ETHUSDT",
-      "velas": 17500,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:54:01Z"
+      "velas": 17501,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:48Z"
     },
     "4h": {
       "fuente": "Bitget ETHUSDT",
       "velas": 13152,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:54:01Z"
+      "actualizado": "2026-11-24T11:21:48Z"
     },
     "1d": {
       "fuente": "Bitget ETHUSDT",
       "velas": 2989,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:54:02Z"
+      "actualizado": "2026-11-24T11:21:49Z"
     }
   },
   "op": {
     "1h": {
       "fuente": "Bitget OPUSDT",
-      "velas": 17489,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:54:02Z"
+      "velas": 17490,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:49Z"
     },
     "4h": {
       "fuente": "Bitget OPUSDT",
       "velas": 9779,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:54:03Z"
+      "actualizado": "2026-11-24T11:21:50Z"
     },
     "1d": {
       "fuente": "Bitget OPUSDT",
       "velas": 1631,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:54:03Z"
+      "actualizado": "2026-11-24T11:21:50Z"
     }
   },
   "inj": {
     "1h": {
       "fuente": "Bitget INJUSDT",
-      "velas": 17489,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:54:04Z"
+      "velas": 17490,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:50Z"
     },
     "4h": {
       "fuente": "Bitget INJUSDT",
       "velas": 9058,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:54:04Z"
+      "actualizado": "2026-11-24T11:21:51Z"
     },
     "1d": {
       "fuente": "Bitget INJUSDT",
       "velas": 1511,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:54:04Z"
+      "actualizado": "2026-11-24T11:21:51Z"
     }
   },
   "bch": {
     "1h": {
       "fuente": "Bitget BCHUSDT",
-      "velas": 17489,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:54:05Z"
+      "velas": 17490,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:51Z"
     },
     "4h": {
       "fuente": "Bitget BCHUSDT",
       "velas": 13149,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:54:06Z"
+      "actualizado": "2026-11-24T11:21:52Z"
     },
     "1d": {
       "fuente": "Bitget BCHUSDT",
       "velas": 2988,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:54:06Z"
+      "actualizado": "2026-11-24T11:21:52Z"
     }
   },
   "sui": {
     "1h": {
       "fuente": "Bitget SUIUSDT",
-      "velas": 17489,
-      "ultima_vela": "2026-11-24T10:00:00Z",
-      "actualizado": "2026-11-24T10:54:07Z"
+      "velas": 17490,
+      "ultima_vela": "2026-11-24T11:00:00Z",
+      "actualizado": "2026-11-24T11:21:53Z"
     },
     "4h": {
       "fuente": "Bitget SUIUSDT",
       "velas": 7768,
       "ultima_vela": "2026-11-24T08:00:00Z",
-      "actualizado": "2026-11-24T10:54:07Z"
+      "actualizado": "2026-11-24T11:21:53Z"
     },
     "1d": {
       "fuente": "Bitget SUIUSDT",
       "velas": 1296,
       "ultima_vela": "2026-11-24T00:00:00Z",
-      "actualizado": "2026-11-24T10:54:07Z"
+      "actualizado": "2026-11-24T11:21:53Z"
     }
   }
 }
