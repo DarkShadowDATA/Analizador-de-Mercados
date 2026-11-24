@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T02:22:02Z",
+ "generado": "2026-11-24T03:21:57Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -865,26 +865,7 @@
      "perforación sin volumen (0.5x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-23T23:00:00Z",
-    "tipo": "spring",
-    "direccion": 1,
-    "cierre": 0.07056,
-    "nivel": 0.06974,
-    "extremo": 0.06929,
-    "poc": 0.071789,
-    "vah": 0.072515,
-    "val": 0.069774,
-    "rsi": 45.146982,
-    "vol_rel": 0.503358,
-    "atr": 0.00106,
-    "puntos": 3,
-    "motivos": [
-     "nivel en zona de volumen (VAL del perfil anclado)",
-     "perforación sin volumen (0.5x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "op",
