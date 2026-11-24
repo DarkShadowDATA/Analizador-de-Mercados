@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T05:21:56Z",
+ "generado": "2026-11-24T06:21:51Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -561,7 +561,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)",
      "sacudida con volumen alto (1.7x): esperar test"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
@@ -904,7 +904,7 @@
      "divergencia de RSI",
      "nivel en zona de volumen (VAL del perfil anclado)"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
@@ -1084,7 +1084,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)",
      "perforación sin volumen (0.3x)"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
