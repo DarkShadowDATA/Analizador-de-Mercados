@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T15:57:18Z",
+ "generado": "2026-11-24T16:21:54Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -686,21 +686,22 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T10:00:00Z",
-    "tipo": "test_spring",
+    "fecha": "2026-11-24T15:00:00Z",
+    "tipo": "spring",
     "direccion": 1,
-    "cierre": 1684.28,
+    "cierre": 1677.9,
     "nivel": 1668.76,
-    "extremo": 1668.76,
-    "poc": 1723.8975,
-    "vah": 1765.802,
-    "val": 1677.582,
-    "rsi": 37.142504,
-    "vol_rel": 0.817291,
-    "atr": 19.027081,
+    "extremo": 1667.43,
+    "poc": 1700.761875,
+    "vah": 1747.4265,
+    "val": 1676.3185,
+    "rsi": 38.138735,
+    "vol_rel": 1.618679,
+    "atr": 20.536667,
     "puntos": 2,
     "motivos": [
-     "retesteo del mínimo con menos volumen"
+     "nivel en zona de volumen (VAL del perfil anclado)",
+     "sacudida con volumen alto (1.6x): esperar test"
     ]
    },
    "senal_activa": null
@@ -1008,22 +1009,21 @@
     "hasta": "2026-11-17"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T14:00:00Z",
+    "fecha": "2026-11-24T15:00:00Z",
     "tipo": "spring",
     "direccion": 1,
-    "cierre": 6.019,
-    "nivel": 6.013,
-    "extremo": 5.903,
-    "poc": 6.252375,
-    "vah": 6.76945,
-    "val": 6.1825,
-    "rsi": 37.971313,
-    "vol_rel": 0.561383,
-    "atr": 0.109831,
+    "cierre": 5.906,
+    "nivel": 5.903,
+    "extremo": 5.849,
+    "poc": 6.24455,
+    "vah": 6.7573,
+    "val": 6.1713,
+    "rsi": 33.539032,
+    "vol_rel": 0.928692,
+    "atr": 0.114771,
     "puntos": 2,
     "motivos": [
-     "RSI sobreventa (31)",
-     "sacudida con volumen alto (1.4x): esperar test"
+     "RSI sobreventa (34)"
     ]
    },
    "senal_activa": null
