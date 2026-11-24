@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24T15:21:48Z",
+ "actualizado": "2026-11-24T15:57:17Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -33,8 +33,8 @@
      "fuente": "Yahoo ES=F"
     }
    },
-   "ultimo": 7213.75,
-   "cambio_pct": -0.56
+   "ultimo": 7176.25,
+   "cambio_pct": -1.08
   },
   {
    "id": "nasdaq100",
@@ -63,8 +63,8 @@
      "fuente": "Yahoo NQ=F"
     }
    },
-   "ultimo": 26293.75,
-   "cambio_pct": -1.92
+   "ultimo": 26130.25,
+   "cambio_pct": -2.53
   },
   {
    "id": "oro",
@@ -93,8 +93,8 @@
      "fuente": "Yahoo GC=F"
     }
    },
-   "ultimo": 3602.4,
-   "cambio_pct": -1.34
+   "ultimo": 3587.1,
+   "cambio_pct": -1.76
   },
   {
    "id": "btc",
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 59902.42,
-   "cambio_pct": -2.23
+   "ultimo": 59920.0,
+   "cambio_pct": -2.2
   },
   {
    "id": "eth",
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1677.7,
-   "cambio_pct": -1.93
+   "ultimo": 1683.41,
+   "cambio_pct": -1.6
   },
   {
    "id": "op",
@@ -183,8 +183,8 @@
      "fuente": "Bitget OPUSDT"
     }
    },
-   "ultimo": 0.0684,
-   "cambio_pct": -3.05
+   "ultimo": 0.0687,
+   "cambio_pct": -2.68
   },
   {
    "id": "inj",
@@ -243,8 +243,8 @@
      "fuente": "Bitget BCHUSDT"
     }
    },
-   "ultimo": 196.9,
-   "cambio_pct": -1.84
+   "ultimo": 196.2,
+   "cambio_pct": -2.19
   },
   {
    "id": "sui",
@@ -273,8 +273,8 @@
      "fuente": "Bitget SUIUSDT"
     }
    },
-   "ultimo": 0.6398,
-   "cambio_pct": -5.13
+   "ultimo": 0.6422,
+   "cambio_pct": -4.77
   }
  ]
 }
