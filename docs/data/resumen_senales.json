@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T11:21:55Z",
+ "generado": "2026-11-24T12:21:59Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -561,7 +561,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)",
      "perforación sin volumen (0.7x)"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
@@ -1027,21 +1027,21 @@
     "hasta": "2026-11-17"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T10:00:00Z",
+    "fecha": "2026-11-24T11:00:00Z",
     "tipo": "spring",
     "direccion": 1,
-    "cierre": 6.075,
-    "nivel": 6.074,
-    "extremo": 6.046,
-    "poc": 6.228813,
-    "vah": 6.67975,
-    "val": 6.167875,
-    "rsi": 36.131519,
-    "vol_rel": 0.532901,
-    "atr": 0.111161,
+    "cierre": 6.101,
+    "nivel": 6.046,
+    "extremo": 6.017,
+    "poc": 6.23035,
+    "vah": 6.6947,
+    "val": 6.1676,
+    "rsi": 38.138477,
+    "vol_rel": 0.852704,
+    "atr": 0.109792,
     "puntos": 2,
     "motivos": [
-     "perforación sin volumen (0.5x)"
+     "divergencia de RSI"
     ]
    },
    "senal_activa": null
@@ -1223,7 +1223,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)",
      "perforación sin volumen (0.4x)"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
@@ -1404,7 +1404,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)",
      "perforación sin volumen (0.4x)"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
