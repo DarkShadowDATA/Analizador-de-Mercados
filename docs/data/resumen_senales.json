@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T06:21:51Z",
+ "generado": "2026-11-24T07:21:52Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -542,27 +542,7 @@
      "sacudida con volumen alto (1.7x): esperar test"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-24T03:00:00Z",
-    "tipo": "spring",
-    "direccion": 1,
-    "cierre": 60334.21,
-    "nivel": 60076.41,
-    "extremo": 59456.21,
-    "poc": 61320.833875,
-    "vah": 61899.51025,
-    "val": 60484.968,
-    "rsi": 39.077692,
-    "vol_rel": 1.69261,
-    "atr": 711.253196,
-    "puntos": 3,
-    "motivos": [
-     "divergencia de RSI",
-     "nivel en zona de volumen (VAL del perfil anclado)",
-     "sacudida con volumen alto (1.7x): esperar test"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "btc",
@@ -886,26 +866,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-24T03:00:00Z",
-    "tipo": "spring",
-    "direccion": 1,
-    "cierre": 0.07038,
-    "nivel": 0.06929,
-    "extremo": 0.06893,
-    "poc": 0.071739,
-    "vah": 0.072676,
-    "val": 0.069781,
-    "rsi": 44.895523,
-    "vol_rel": 1.21906,
-    "atr": 0.001049,
-    "puntos": 3,
-    "motivos": [
-     "divergencia de RSI",
-     "nivel en zona de volumen (VAL del perfil anclado)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "op",
@@ -1066,26 +1027,7 @@
      "perforación sin volumen (0.3x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-24T03:00:00Z",
-    "tipo": "spring",
-    "direccion": 1,
-    "cierre": 6.21,
-    "nivel": 6.081,
-    "extremo": 6.074,
-    "poc": 6.227887,
-    "vah": 6.59485,
-    "val": 6.12135,
-    "rsi": 41.308155,
-    "vol_rel": 0.349956,
-    "atr": 0.131361,
-    "puntos": 3,
-    "motivos": [
-     "nivel en zona de volumen (VAL del perfil anclado)",
-     "perforación sin volumen (0.3x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "inj",
