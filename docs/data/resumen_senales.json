@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T19:21:52Z",
+ "generado": "2026-11-24T20:21:49Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -1041,7 +1041,7 @@
      "retesteo del mínimo con menos volumen",
      "volumen seco (0.2x)"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
@@ -1221,7 +1221,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)",
      "absorción: vuelta con volumen alto (2.2x)"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
@@ -1404,7 +1404,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)",
      "sacudida con volumen alto (1.4x): esperar test"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
