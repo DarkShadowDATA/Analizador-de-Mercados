@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T17:56:02Z",
+ "generado": "2026-11-25T18:01:02Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
@@ -214,23 +214,23 @@
      "entrada": 1679.32,
      "stop": 1686.03728,
      "objetivo": 1633.21,
-     "salida": 1683.41,
-     "motivo_salida": "abierta",
-     "r": 0.0,
+     "salida": 1686.03728,
+     "motivo_salida": "stop",
+     "r": -1.401,
      "barras": 3
     }
    ],
    "metricas": {
-    "operaciones": 2,
-    "aciertos_pct": 50.0,
-    "r_medio": -0.013,
-    "r_total": -0.03,
-    "factor_beneficio": 0.98,
-    "max_caida_r": 1.17,
-    "rentabilidad_pct": -0.0,
-    "max_caida_pct": 1.2,
+    "operaciones": 3,
+    "aciertos_pct": 33.3,
+    "r_medio": -0.476,
+    "r_total": -1.43,
+    "factor_beneficio": 0.45,
+    "max_caida_r": 2.58,
+    "rentabilidad_pct": -1.4,
+    "max_caida_pct": 2.6,
     "largos": 2,
-    "cortos": 0,
+    "cortos": 1,
     "desde": "2026-11-24",
     "hasta": "2026-11-25"
    },
@@ -283,14 +283,14 @@
      "puntos": 0,
      "fecha_senal": "2026-11-25T17:40:00Z",
      "fecha_entrada": "2026-11-25T17:45:00Z",
-     "fecha_salida": "2026-11-25T17:55:00Z",
+     "fecha_salida": "2026-11-25T18:00:00Z",
      "entrada": 59743.09,
      "stop": 59982.660291,
      "objetivo": 58636.25,
-     "salida": 59821.4,
+     "salida": 59631.32,
      "motivo_salida": "abierta",
      "r": 0.0,
-     "barras": 3
+     "barras": 4
     }
    ],
    "metricas": {
@@ -319,5 +319,5 @@
    10000.0
   ]
  ],
- "capital_experimento": 9721.03
+ "capital_experimento": 9584.86
 }
