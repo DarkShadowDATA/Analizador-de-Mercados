@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T23:56:01Z",
+ "generado": "2026-11-25T00:01:03Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
@@ -184,14 +184,25 @@
      "entrada": 1669.72,
      "stop": 1663.04112,
      "objetivo": 1721.99,
-     "salida": 1680.21,
-     "motivo_salida": "abierta",
-     "r": 0.0,
+     "salida": 1680.07,
+     "motivo_salida": "tiempo",
+     "r": 1.148,
      "barras": 104
     }
    ],
    "metricas": {
-    "operaciones": 0
+    "operaciones": 1,
+    "aciertos_pct": 100.0,
+    "r_medio": 1.148,
+    "r_total": 1.15,
+    "factor_beneficio": null,
+    "max_caida_r": 0.0,
+    "rentabilidad_pct": 1.1,
+    "max_caida_pct": 0.0,
+    "largos": 1,
+    "cortos": 0,
+    "desde": "2026-11-24",
+    "hasta": "2026-11-24"
    },
    "bitget": {
     "error": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
@@ -248,5 +259,5 @@
    10000.0
   ]
  ],
- "capital_experimento": 9862.89
+ "capital_experimento": 9976.16
 }
