@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T18:11:02Z",
+ "generado": "2026-11-25T18:16:02Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
@@ -283,14 +283,14 @@
      "puntos": 0,
      "fecha_senal": "2026-11-25T17:40:00Z",
      "fecha_entrada": "2026-11-25T17:45:00Z",
-     "fecha_salida": "2026-11-25T18:10:00Z",
+     "fecha_salida": "2026-11-25T18:15:00Z",
      "entrada": 59743.09,
      "stop": 59982.660291,
      "objetivo": 58636.25,
-     "salida": 59803.47,
+     "salida": 59871.5,
      "motivo_salida": "abierta",
      "r": 0.0,
-     "barras": 6
+     "barras": 7
     }
    ],
    "metricas": {
