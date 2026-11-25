@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T00:21:51Z",
+ "generado": "2026-11-25T01:21:58Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -383,7 +383,7 @@
     "vah": 3676.892493,
     "val": 3601.652452,
     "rsi": 33.101896,
-    "vol_rel": 0.938101,
+    "vol_rel": 0.937106,
     "atr": 22.264727,
     "puntos": 2,
     "motivos": [
@@ -1186,26 +1186,7 @@
      "volumen seco (0.2x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-24T21:00:00Z",
-    "tipo": "test_spring",
-    "direccion": 1,
-    "cierre": 196.5,
-    "nivel": 194.8,
-    "extremo": 194.8,
-    "poc": 195.83625,
-    "vah": 202.1475,
-    "val": 194.6675,
-    "rsi": 44.118749,
-    "vol_rel": 0.16902,
-    "atr": 2.248295,
-    "puntos": 3,
-    "motivos": [
-     "retesteo del mínimo con menos volumen",
-     "volumen seco (0.2x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "bch",
