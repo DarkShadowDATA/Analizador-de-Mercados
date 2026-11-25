@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T08:42:25Z",
+ "actualizado": "2026-11-25T09:21:52Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -15,9 +15,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13785,
+     "velas": 13786,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Yahoo ES=F"
     },
     "4h": {
@@ -33,8 +33,8 @@
      "fuente": "Yahoo ES=F"
     }
    },
-   "ultimo": 7163.5,
-   "cambio_pct": -0.75
+   "ultimo": 7142.5,
+   "cambio_pct": -1.04
   },
   {
    "id": "nasdaq100",
@@ -45,9 +45,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13782,
+     "velas": 13783,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Yahoo NQ=F"
     },
     "4h": {
@@ -63,8 +63,8 @@
      "fuente": "Yahoo NQ=F"
     }
    },
-   "ultimo": 25871.75,
-   "cambio_pct": -1.54
+   "ultimo": 25763.0,
+   "cambio_pct": -1.95
   },
   {
    "id": "oro",
@@ -75,9 +75,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13815,
+     "velas": 13816,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Yahoo GC=F"
     },
     "4h": {
@@ -93,8 +93,8 @@
      "fuente": "Yahoo GC=F"
     }
    },
-   "ultimo": 3559.5,
-   "cambio_pct": -0.07
+   "ultimo": 3560.8,
+   "cambio_pct": -0.03
   },
   {
    "id": "btc",
@@ -105,9 +105,9 @@
    "bitget": "BTCUSDT",
    "series": {
     "1h": {
-     "velas": 17522,
+     "velas": 17523,
      "desde": "2024-11-21",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "4h": {
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 59226.65,
-   "cambio_pct": -1.01
+   "ultimo": 59074.67,
+   "cambio_pct": -1.26
   },
   {
    "id": "eth",
@@ -135,9 +135,9 @@
    "bitget": "ETHUSDT",
    "series": {
     "1h": {
-     "velas": 17522,
+     "velas": 17523,
      "desde": "2024-11-21",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "4h": {
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1649.37,
-   "cambio_pct": -1.83
+   "ultimo": 1643.32,
+   "cambio_pct": -2.19
   },
   {
    "id": "op",
@@ -165,9 +165,9 @@
    "bitget": "OPUSDT",
    "series": {
     "1h": {
-     "velas": 17511,
+     "velas": 17512,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Bitget OPUSDT"
     },
     "4h": {
@@ -183,8 +183,8 @@
      "fuente": "Bitget OPUSDT"
     }
    },
-   "ultimo": 0.0682,
-   "cambio_pct": -0.31
+   "ultimo": 0.0677,
+   "cambio_pct": -1.08
   },
   {
    "id": "inj",
@@ -195,9 +195,9 @@
    "bitget": "INJUSDT",
    "series": {
     "1h": {
-     "velas": 17511,
+     "velas": 17512,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Bitget INJUSDT"
     },
     "4h": {
@@ -213,8 +213,8 @@
      "fuente": "Bitget INJUSDT"
     }
    },
-   "ultimo": 5.811,
-   "cambio_pct": -0.68
+   "ultimo": 5.798,
+   "cambio_pct": -0.91
   },
   {
    "id": "bch",
@@ -225,9 +225,9 @@
    "bitget": "BCHUSDT",
    "series": {
     "1h": {
-     "velas": 17511,
+     "velas": 17512,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Bitget BCHUSDT"
     },
     "4h": {
@@ -243,8 +243,8 @@
      "fuente": "Bitget BCHUSDT"
     }
    },
-   "ultimo": 197.2,
-   "cambio_pct": -0.15
+   "ultimo": 195.7,
+   "cambio_pct": -0.91
   },
   {
    "id": "sui",
@@ -255,9 +255,9 @@
    "bitget": "SUIUSDT",
    "series": {
     "1h": {
-     "velas": 17511,
+     "velas": 17512,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T08:00Z",
+     "hasta": "2026-11-25T09:00Z",
      "fuente": "Bitget SUIUSDT"
     },
     "4h": {
@@ -273,8 +273,8 @@
      "fuente": "Bitget SUIUSDT"
     }
    },
-   "ultimo": 0.6438,
-   "cambio_pct": -0.74
+   "ultimo": 0.6389,
+   "cambio_pct": -1.5
   }
  ]
 }
