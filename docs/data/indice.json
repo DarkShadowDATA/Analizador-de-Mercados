@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T07:21:53Z",
+ "actualizado": "2026-11-25T08:21:52Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -15,15 +15,15 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13784,
+     "velas": 13785,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Yahoo ES=F"
     },
     "4h": {
-     "velas": 3733,
+     "velas": 3734,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Yahoo ES=F"
     },
     "1d": {
@@ -33,8 +33,8 @@
      "fuente": "Yahoo ES=F"
     }
    },
-   "ultimo": 7156.0,
-   "cambio_pct": -0.85
+   "ultimo": 7147.25,
+   "cambio_pct": -0.97
   },
   {
    "id": "nasdaq100",
@@ -45,15 +45,15 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13781,
+     "velas": 13782,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Yahoo NQ=F"
     },
     "4h": {
-     "velas": 3731,
+     "velas": 3732,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Yahoo NQ=F"
     },
     "1d": {
@@ -63,8 +63,8 @@
      "fuente": "Yahoo NQ=F"
     }
    },
-   "ultimo": 25861.5,
-   "cambio_pct": -1.58
+   "ultimo": 25781.0,
+   "cambio_pct": -1.88
   },
   {
    "id": "oro",
@@ -75,15 +75,15 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13814,
+     "velas": 13815,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Yahoo GC=F"
     },
     "4h": {
-     "velas": 3739,
+     "velas": 3740,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Yahoo GC=F"
     },
     "1d": {
@@ -93,8 +93,8 @@
      "fuente": "Yahoo GC=F"
     }
    },
-   "ultimo": 3518.4,
-   "cambio_pct": -1.22
+   "ultimo": 3521.0,
+   "cambio_pct": -1.15
   },
   {
    "id": "btc",
@@ -105,15 +105,15 @@
    "bitget": "BTCUSDT",
    "series": {
     "1h": {
-     "velas": 17521,
+     "velas": 17522,
      "desde": "2024-11-21",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "4h": {
-     "velas": 13157,
+     "velas": 13158,
      "desde": "2020-11-12",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "1d": {
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 59074.53,
-   "cambio_pct": -1.26
+   "ultimo": 58967.14,
+   "cambio_pct": -1.44
   },
   {
    "id": "eth",
@@ -135,15 +135,15 @@
    "bitget": "ETHUSDT",
    "series": {
     "1h": {
-     "velas": 17521,
+     "velas": 17522,
      "desde": "2024-11-21",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "4h": {
-     "velas": 13157,
+     "velas": 13158,
      "desde": "2020-11-12",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "1d": {
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1655.2,
-   "cambio_pct": -1.48
+   "ultimo": 1642.59,
+   "cambio_pct": -2.23
   },
   {
    "id": "op",
@@ -165,15 +165,15 @@
    "bitget": "OPUSDT",
    "series": {
     "1h": {
-     "velas": 17510,
+     "velas": 17511,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget OPUSDT"
     },
     "4h": {
-     "velas": 9784,
+     "velas": 9785,
      "desde": "2022-05-31",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget OPUSDT"
     },
     "1d": {
@@ -184,7 +184,7 @@
     }
    },
    "ultimo": 0.0683,
-   "cambio_pct": -0.23
+   "cambio_pct": -0.16
   },
   {
    "id": "inj",
@@ -195,15 +195,15 @@
    "bitget": "INJUSDT",
    "series": {
     "1h": {
-     "velas": 17510,
+     "velas": 17511,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget INJUSDT"
     },
     "4h": {
-     "velas": 9063,
+     "velas": 9064,
      "desde": "2022-09-29",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget INJUSDT"
     },
     "1d": {
@@ -213,8 +213,8 @@
      "fuente": "Bitget INJUSDT"
     }
    },
-   "ultimo": 5.834,
-   "cambio_pct": -0.29
+   "ultimo": 5.802,
+   "cambio_pct": -0.84
   },
   {
    "id": "bch",
@@ -225,15 +225,15 @@
    "bitget": "BCHUSDT",
    "series": {
     "1h": {
-     "velas": 17510,
+     "velas": 17511,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget BCHUSDT"
     },
     "4h": {
-     "velas": 13154,
+     "velas": 13155,
      "desde": "2020-11-13",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget BCHUSDT"
     },
     "1d": {
@@ -243,8 +243,8 @@
      "fuente": "Bitget BCHUSDT"
     }
    },
-   "ultimo": 196.9,
-   "cambio_pct": -0.3
+   "ultimo": 196.7,
+   "cambio_pct": -0.41
   },
   {
    "id": "sui",
@@ -255,15 +255,15 @@
    "bitget": "SUIUSDT",
    "series": {
     "1h": {
-     "velas": 17510,
+     "velas": 17511,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T07:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget SUIUSDT"
     },
     "4h": {
-     "velas": 7773,
+     "velas": 7774,
      "desde": "2023-05-03",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T08:00Z",
      "fuente": "Bitget SUIUSDT"
     },
     "1d": {
@@ -273,8 +273,8 @@
      "fuente": "Bitget SUIUSDT"
     }
    },
-   "ultimo": 0.6426,
-   "cambio_pct": -0.93
+   "ultimo": 0.6423,
+   "cambio_pct": -0.97
   }
  ]
 }
