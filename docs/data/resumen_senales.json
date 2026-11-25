@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T20:21:52Z",
+ "generado": "2026-11-25T21:21:55Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -1008,23 +1008,20 @@
     "hasta": "2026-11-17"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T17:00:00Z",
-    "tipo": "test_spring",
-    "direccion": 1,
-    "cierre": 5.935,
-    "nivel": 5.849,
-    "extremo": 5.849,
-    "poc": 6.24455,
-    "vah": 6.7866,
-    "val": 6.1713,
-    "rsi": 36.018008,
-    "vol_rel": 0.23638,
-    "atr": 0.110502,
-    "puntos": 3,
-    "motivos": [
-     "retesteo del mínimo con menos volumen",
-     "volumen seco (0.2x)"
-    ]
+    "fecha": "2026-11-25T20:00:00Z",
+    "tipo": "upthrust",
+    "direccion": -1,
+    "cierre": 6.034,
+    "nivel": 6.037,
+    "extremo": 6.068,
+    "poc": 5.797413,
+    "vah": 6.400075,
+    "val": 5.596525,
+    "rsi": 62.176566,
+    "vol_rel": 1.087623,
+    "atr": 0.106525,
+    "puntos": 1,
+    "motivos": []
    },
    "senal_activa": null
   },
