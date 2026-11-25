@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T04:21:46Z",
+ "actualizado": "2026-11-25T05:21:51Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -15,9 +15,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13781,
+     "velas": 13782,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Yahoo ES=F"
     },
     "4h": {
@@ -27,14 +27,14 @@
      "fuente": "Yahoo ES=F"
     },
     "1d": {
-     "velas": 6613,
+     "velas": 6614,
      "desde": "2000-09-18",
-     "hasta": "2026-11-24T00:00Z",
+     "hasta": "2026-11-25T00:00Z",
      "fuente": "Yahoo ES=F"
     }
    },
-   "ultimo": 7170.75,
-   "cambio_pct": -1.15
+   "ultimo": 7161.0,
+   "cambio_pct": -0.78
   },
   {
    "id": "nasdaq100",
@@ -45,9 +45,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13778,
+     "velas": 13779,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Yahoo NQ=F"
     },
     "4h": {
@@ -57,14 +57,14 @@
      "fuente": "Yahoo NQ=F"
     },
     "1d": {
-     "velas": 6613,
+     "velas": 6614,
      "desde": "2000-09-18",
-     "hasta": "2026-11-24T00:00Z",
+     "hasta": "2026-11-25T00:00Z",
      "fuente": "Yahoo NQ=F"
     }
    },
-   "ultimo": 25991.5,
-   "cambio_pct": -3.05
+   "ultimo": 25935.75,
+   "cambio_pct": -1.29
   },
   {
    "id": "oro",
@@ -75,9 +75,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13811,
+     "velas": 13812,
      "desde": "2024-07-01",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Yahoo GC=F"
     },
     "4h": {
@@ -87,14 +87,14 @@
      "fuente": "Yahoo GC=F"
     },
     "1d": {
-     "velas": 6585,
+     "velas": 6586,
      "desde": "2000-08-30",
-     "hasta": "2026-11-24T00:00Z",
+     "hasta": "2026-11-25T00:00Z",
      "fuente": "Yahoo GC=F"
     }
    },
-   "ultimo": 3543.1,
-   "cambio_pct": -2.97
+   "ultimo": 3544.5,
+   "cambio_pct": -0.49
   },
   {
    "id": "btc",
@@ -105,9 +105,9 @@
    "bitget": "BTCUSDT",
    "series": {
     "1h": {
-     "velas": 17518,
+     "velas": 17519,
      "desde": "2024-11-21",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "4h": {
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 59350.94,
-   "cambio_pct": -0.8
+   "ultimo": 59213.26,
+   "cambio_pct": -1.03
   },
   {
    "id": "eth",
@@ -135,9 +135,9 @@
    "bitget": "ETHUSDT",
    "series": {
     "1h": {
-     "velas": 17518,
+     "velas": 17519,
      "desde": "2024-11-21",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "4h": {
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1666.42,
-   "cambio_pct": -0.81
+   "ultimo": 1660.5,
+   "cambio_pct": -1.16
   },
   {
    "id": "op",
@@ -165,9 +165,9 @@
    "bitget": "OPUSDT",
    "series": {
     "1h": {
-     "velas": 17507,
+     "velas": 17508,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Bitget OPUSDT"
     },
     "4h": {
@@ -183,8 +183,8 @@
      "fuente": "Bitget OPUSDT"
     }
    },
-   "ultimo": 0.0684,
-   "cambio_pct": -0.06
+   "ultimo": 0.0682,
+   "cambio_pct": -0.38
   },
   {
    "id": "inj",
@@ -195,9 +195,9 @@
    "bitget": "INJUSDT",
    "series": {
     "1h": {
-     "velas": 17507,
+     "velas": 17508,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Bitget INJUSDT"
     },
     "4h": {
@@ -213,8 +213,8 @@
      "fuente": "Bitget INJUSDT"
     }
    },
-   "ultimo": 5.814,
-   "cambio_pct": -0.63
+   "ultimo": 5.787,
+   "cambio_pct": -1.09
   },
   {
    "id": "bch",
@@ -225,9 +225,9 @@
    "bitget": "BCHUSDT",
    "series": {
     "1h": {
-     "velas": 17507,
+     "velas": 17508,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Bitget BCHUSDT"
     },
     "4h": {
@@ -255,9 +255,9 @@
    "bitget": "SUIUSDT",
    "series": {
     "1h": {
-     "velas": 17507,
+     "velas": 17508,
      "desde": "2024-11-22",
-     "hasta": "2026-11-25T04:00Z",
+     "hasta": "2026-11-25T05:00Z",
      "fuente": "Bitget SUIUSDT"
     },
     "4h": {
@@ -273,8 +273,8 @@
      "fuente": "Bitget SUIUSDT"
     }
    },
-   "ultimo": 0.6457,
-   "cambio_pct": -0.45
+   "ultimo": 0.6444,
+   "cambio_pct": -0.65
   }
  ]
 }
