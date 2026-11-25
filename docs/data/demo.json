@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T18:16:02Z",
+ "generado": "2026-11-25T18:21:02Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
@@ -287,23 +287,23 @@
      "entrada": 59743.09,
      "stop": 59982.660291,
      "objetivo": 58636.25,
-     "salida": 59871.5,
-     "motivo_salida": "abierta",
-     "r": 0.0,
+     "salida": 59982.660291,
+     "motivo_salida": "stop",
+     "r": -1.4,
      "barras": 7
     }
    ],
    "metricas": {
-    "operaciones": 2,
+    "operaciones": 3,
     "aciertos_pct": 0.0,
-    "r_medio": -1.385,
-    "r_total": -2.77,
+    "r_medio": -1.39,
+    "r_total": -4.17,
     "factor_beneficio": 0.0,
-    "max_caida_r": 2.77,
-    "rentabilidad_pct": -2.8,
-    "max_caida_pct": 2.8,
+    "max_caida_r": 4.17,
+    "rentabilidad_pct": -4.1,
+    "max_caida_pct": 4.1,
     "largos": 2,
-    "cortos": 0,
+    "cortos": 1,
     "desde": "2026-11-24",
     "hasta": "2026-11-25"
    },
@@ -319,5 +319,5 @@
    10000.0
   ]
  ],
- "capital_experimento": 9584.86
+ "capital_experimento": 9450.69
 }
