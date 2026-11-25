@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T11:26:03Z",
+ "generado": "2026-11-25T11:31:02Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
@@ -231,6 +231,21 @@
      "motivo_salida": "stop",
      "r": -1.371,
      "barras": 69
+    },
+    {
+     "tipo": "spring_asia",
+     "direccion": 1,
+     "puntos": 0,
+     "fecha_senal": "2026-11-25T11:25:00Z",
+     "fecha_entrada": "2026-11-25T11:30:00Z",
+     "fecha_salida": "2026-11-25T11:30:00Z",
+     "entrada": 58657.0,
+     "stop": 58422.372,
+     "objetivo": 59831.01,
+     "salida": 58561.28,
+     "motivo_salida": "abierta",
+     "r": 0.0,
+     "barras": 1
     }
    ],
    "metricas": {
