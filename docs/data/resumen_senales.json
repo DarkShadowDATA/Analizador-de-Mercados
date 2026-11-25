@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T19:52:27Z",
+ "generado": "2026-11-25T20:21:52Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -1062,31 +1062,52 @@
     "hasta": "2026-10-03"
    },
    "ultima_senal": {
-    "fecha": "2026-11-22T04:00:00Z",
-    "tipo": "test_spring",
+    "fecha": "2026-11-25T16:00:00Z",
+    "tipo": "spring",
     "direccion": 1,
-    "cierre": 5.955,
-    "nivel": 5.847,
-    "extremo": 5.847,
-    "poc": 6.959138,
-    "vah": 7.45605,
-    "val": 6.32025,
-    "rsi": 32.300038,
-    "vol_rel": 0.141605,
-    "atr": 0.257568,
+    "cierre": 5.969,
+    "nivel": 5.691,
+    "extremo": 5.56,
+    "poc": 6.24125,
+    "vah": 6.8135,
+    "val": 5.7235,
+    "rsi": 44.607258,
+    "vol_rel": 1.046999,
+    "atr": 0.234498,
     "puntos": 3,
     "motivos": [
-     "retesteo del mínimo con menos volumen",
-     "volumen seco (0.1x)"
+     "RSI sobreventa (33)",
+     "nivel en zona de volumen (VAL del perfil anclado)",
+     "sacudida con volumen alto (1.4x): esperar test"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-25T16:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 5.969,
+    "nivel": 5.691,
+    "extremo": 5.56,
+    "poc": 6.24125,
+    "vah": 6.8135,
+    "val": 5.7235,
+    "rsi": 44.607258,
+    "vol_rel": 1.046999,
+    "atr": 0.234498,
+    "puntos": 3,
+    "motivos": [
+     "RSI sobreventa (33)",
+     "nivel en zona de volumen (VAL del perfil anclado)",
+     "sacudida con volumen alto (1.4x): esperar test"
+    ],
+    "velas_desde": 0
+   }
   },
   {
    "mercado": "inj",
    "nombre": "Injective",
    "tf": "1d",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 6,
     "aciertos_pct": 16.7,
