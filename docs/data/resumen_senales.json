@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-26T18:21:46Z",
+ "generado": "2026-11-26T19:21:49Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -1343,7 +1343,7 @@
    "mercado": "sui",
    "nombre": "Sui",
    "tf": "1h",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 97,
     "aciertos_pct": 40.2,
