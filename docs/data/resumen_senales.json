@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-26T02:21:59Z",
+ "generado": "2026-11-26T03:21:49Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -35,11 +35,11 @@
    "total": {
     "operaciones": 74,
     "aciertos_pct": 37.8,
-    "r_medio": -0.176,
-    "r_total": -13.04,
-    "factor_beneficio": 0.73,
+    "r_medio": -0.182,
+    "r_total": -13.46,
+    "factor_beneficio": 0.72,
     "max_caida_r": 18.9,
-    "rentabilidad_pct": -12.7,
+    "rentabilidad_pct": -13.1,
     "max_caida_pct": 17.5,
     "largos": 33,
     "cortos": 41,
@@ -49,11 +49,11 @@
    "ultimos_2_anios": {
     "operaciones": 65,
     "aciertos_pct": 41.5,
-    "r_medio": -0.088,
-    "r_total": -5.74,
-    "factor_beneficio": 0.86,
+    "r_medio": -0.095,
+    "r_total": -6.17,
+    "factor_beneficio": 0.85,
     "max_caida_r": 14.2,
-    "rentabilidad_pct": -6.0,
+    "rentabilidad_pct": -6.4,
     "max_caida_pct": 13.4,
     "largos": 31,
     "cortos": 34,
@@ -64,15 +64,15 @@
     "fecha": "2026-11-26T01:00:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 7231.75,
+    "cierre": 7231.5,
     "nivel": 7238.25,
     "extremo": 7250.25,
     "poc": 7193.353125,
     "vah": 7236.8625,
     "val": 7089.6,
-    "rsi": 62.756145,
-    "vol_rel": 0.110701,
-    "atr": 42.299278,
+    "rsi": 62.682591,
+    "vol_rel": 0.111308,
+    "atr": 42.285152,
     "puntos": 3,
     "motivos": [
      "nivel en zona de volumen (VAH del perfil anclado)",
@@ -83,21 +83,21 @@
     "fecha": "2026-11-26T01:00:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 7231.75,
+    "cierre": 7231.5,
     "nivel": 7238.25,
     "extremo": 7250.25,
     "poc": 7193.353125,
     "vah": 7236.8625,
     "val": 7089.6,
-    "rsi": 62.756145,
-    "vol_rel": 0.110701,
-    "atr": 42.299278,
+    "rsi": 62.682591,
+    "vol_rel": 0.111308,
+    "atr": 42.285152,
     "puntos": 3,
     "motivos": [
      "nivel en zona de volumen (VAH del perfil anclado)",
      "perforación sin volumen (0.1x)"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
@@ -108,7 +108,7 @@
    "total": {
     "operaciones": 19,
     "aciertos_pct": 52.6,
-    "r_medio": -0.006,
+    "r_medio": -0.007,
     "r_total": -0.12,
     "factor_beneficio": 0.99,
     "max_caida_r": 5.25,
@@ -123,10 +123,10 @@
     "operaciones": 17,
     "aciertos_pct": 52.9,
     "r_medio": -0.01,
-    "r_total": -0.16,
+    "r_total": -0.17,
     "factor_beneficio": 0.98,
     "max_caida_r": 4.19,
-    "rentabilidad_pct": -0.2,
+    "rentabilidad_pct": -0.3,
     "max_caida_pct": 4.1,
     "largos": 12,
     "cortos": 5,
@@ -137,15 +137,15 @@
     "fecha": "2026-11-19T08:00:00Z",
     "tipo": "test_spring",
     "direccion": 1,
-    "cierre": 7431.5,
+    "cierre": 7431.25,
     "nivel": 7395.25,
     "extremo": 7395.25,
     "poc": 7540.80625,
     "vah": 7674.75,
     "val": 7406.8625,
-    "rsi": 47.955887,
-    "vol_rel": 0.253884,
-    "atr": 53.923146,
+    "rsi": 47.92355,
+    "vol_rel": 0.253933,
+    "atr": 53.923128,
     "puntos": 3,
     "motivos": [
      "retesteo del mínimo con menos volumen",
@@ -203,29 +203,29 @@
    "tf": "1h",
    "tendencia": "bajista",
    "total": {
-    "operaciones": 83,
-    "aciertos_pct": 32.5,
-    "r_medio": -0.221,
-    "r_total": -18.37,
-    "factor_beneficio": 0.67,
-    "max_caida_r": 25.02,
-    "rentabilidad_pct": -17.3,
-    "max_caida_pct": 22.5,
-    "largos": 41,
+    "operaciones": 82,
+    "aciertos_pct": 32.9,
+    "r_medio": -0.21,
+    "r_total": -17.24,
+    "factor_beneficio": 0.69,
+    "max_caida_r": 24.09,
+    "rentabilidad_pct": -16.3,
+    "max_caida_pct": 21.7,
+    "largos": 40,
     "cortos": 42,
     "desde": "2024-07-22",
     "hasta": "2026-11-13"
    },
    "ultimos_2_anios": {
-    "operaciones": 69,
-    "aciertos_pct": 31.9,
-    "r_medio": -0.31,
-    "r_total": -21.4,
-    "factor_beneficio": 0.57,
-    "max_caida_r": 23.08,
-    "rentabilidad_pct": -19.6,
-    "max_caida_pct": 20.9,
-    "largos": 35,
+    "operaciones": 68,
+    "aciertos_pct": 32.4,
+    "r_medio": -0.298,
+    "r_total": -20.26,
+    "factor_beneficio": 0.58,
+    "max_caida_r": 22.15,
+    "rentabilidad_pct": -18.7,
+    "max_caida_pct": 20.1,
+    "largos": 34,
     "cortos": 34,
     "desde": "2024-11-26",
     "hasta": "2026-11-13"
@@ -240,9 +240,9 @@
     "poc": 27128.321875,
     "vah": 27510.45625,
     "val": 26673.4,
-    "rsi": 23.06424,
+    "rsi": 23.095139,
     "vol_rel": 0.317242,
-    "atr": 219.894539,
+    "atr": 219.907096,
     "puntos": 3,
     "motivos": [
      "RSI sobreventa (23)",
@@ -294,12 +294,12 @@
     "poc": 27269.56875,
     "vah": 28114.375,
     "val": 26832.6,
-    "rsi": 45.127309,
-    "vol_rel": 0.898802,
-    "atr": 371.230886,
+    "rsi": 45.337281,
+    "vol_rel": 0.909842,
+    "atr": 374.720745,
     "puntos": 3,
     "motivos": [
-     "RSI sobreventa (30)",
+     "RSI sobreventa (31)",
      "nivel en zona de volumen (VAL del perfil anclado)",
      "sacudida con volumen alto (2.5x): esperar test"
     ]
@@ -365,53 +365,72 @@
    "tf": "1h",
    "tendencia": "bajista",
    "total": {
-    "operaciones": 66,
-    "aciertos_pct": 48.5,
-    "r_medio": 0.138,
-    "r_total": 9.1,
-    "factor_beneficio": 1.26,
+    "operaciones": 65,
+    "aciertos_pct": 47.7,
+    "r_medio": 0.097,
+    "r_total": 6.31,
+    "factor_beneficio": 1.18,
     "max_caida_r": 7.34,
-    "rentabilidad_pct": 8.9,
+    "rentabilidad_pct": 5.9,
     "max_caida_pct": 7.2,
     "largos": 35,
-    "cortos": 31,
+    "cortos": 30,
     "desde": "2024-07-23",
     "hasta": "2026-11-23"
    },
    "ultimos_2_anios": {
-    "operaciones": 58,
-    "aciertos_pct": 48.3,
-    "r_medio": 0.162,
-    "r_total": 9.41,
-    "factor_beneficio": 1.31,
+    "operaciones": 57,
+    "aciertos_pct": 47.4,
+    "r_medio": 0.116,
+    "r_total": 6.62,
+    "factor_beneficio": 1.22,
     "max_caida_r": 7.34,
-    "rentabilidad_pct": 9.3,
+    "rentabilidad_pct": 6.3,
     "max_caida_pct": 7.2,
     "largos": 30,
-    "cortos": 28,
+    "cortos": 27,
     "desde": "2024-12-26",
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T17:00:00Z",
-    "tipo": "spring",
-    "direccion": 1,
-    "cierre": 3566.3999,
-    "nivel": 3564.5,
-    "extremo": 3557.3999,
-    "poc": 3622.813714,
-    "vah": 3676.892493,
-    "val": 3601.652452,
-    "rsi": 33.101896,
-    "vol_rel": 0.937106,
-    "atr": 22.264727,
-    "puntos": 2,
+    "fecha": "2026-11-26T02:00:00Z",
+    "tipo": "upthrust",
+    "direccion": -1,
+    "cierre": 3615.3999,
+    "nivel": 3619.8,
+    "extremo": 3634.7,
+    "poc": 3622.805,
+    "vah": 3685.07,
+    "val": 3548.68,
+    "rsi": 60.643406,
+    "vol_rel": 0.566859,
+    "atr": 30.937144,
+    "puntos": 3,
     "motivos": [
-     "RSI sobreventa (32)",
-     "sacudida con volumen alto (1.7x): esperar test"
+     "nivel en zona de volumen (POC del perfil anclado)",
+     "perforación sin volumen (0.6x)"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-26T02:00:00Z",
+    "tipo": "upthrust",
+    "direccion": -1,
+    "cierre": 3615.3999,
+    "nivel": 3619.8,
+    "extremo": 3634.7,
+    "poc": 3622.805,
+    "vah": 3685.07,
+    "val": 3548.68,
+    "rsi": 60.643406,
+    "vol_rel": 0.566859,
+    "atr": 30.937144,
+    "puntos": 3,
+    "motivos": [
+     "nivel en zona de volumen (POC del perfil anclado)",
+     "perforación sin volumen (0.6x)"
+    ],
+    "velas_desde": 0
+   }
   },
   {
    "mercado": "oro",
@@ -450,15 +469,15 @@
     "fecha": "2026-10-14T20:00:00Z",
     "tipo": "spring",
     "direccion": 1,
-    "cierre": 4133.1001,
+    "cierre": 4130.2002,
     "nivel": 4126.8999,
     "extremo": 4095.0,
     "poc": 4213.968587,
     "vah": 4223.412325,
     "val": 4140.307435,
-    "rsi": 38.706886,
-    "vol_rel": 0.258954,
-    "atr": 26.831405,
+    "rsi": 37.753909,
+    "vol_rel": 0.235818,
+    "atr": 26.756756,
     "puntos": 2,
     "motivos": [
      "RSI sobreventa (28)",
@@ -561,26 +580,7 @@
      "perforación sin volumen (0.3x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-25T23:00:00Z",
-    "tipo": "upthrust",
-    "direccion": -1,
-    "cierre": 60459.24,
-    "nivel": 60500.0,
-    "extremo": 60569.67,
-    "poc": 60313.6,
-    "vah": 60587.2,
-    "val": 58033.6,
-    "rsi": 62.360967,
-    "vol_rel": 0.307379,
-    "atr": 634.861357,
-    "puntos": 3,
-    "motivos": [
-     "nivel en zona de volumen (VAH del perfil anclado)",
-     "perforación sin volumen (0.3x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "btc",
@@ -921,7 +921,7 @@
      "nivel en zona de volumen (VAH del perfil anclado)",
      "perforación sin volumen (0.8x)"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
@@ -1037,32 +1037,32 @@
    "tf": "1h",
    "tendencia": "bajista",
    "total": {
-    "operaciones": 103,
-    "aciertos_pct": 31.1,
-    "r_medio": -0.35,
-    "r_total": -36.08,
-    "factor_beneficio": 0.49,
-    "max_caida_r": 37.02,
-    "rentabilidad_pct": -30.7,
-    "max_caida_pct": 31.3,
+    "operaciones": 104,
+    "aciertos_pct": 30.8,
+    "r_medio": -0.357,
+    "r_total": -37.14,
+    "factor_beneficio": 0.48,
+    "max_caida_r": 38.08,
+    "rentabilidad_pct": -31.4,
+    "max_caida_pct": 32.1,
     "largos": 53,
-    "cortos": 50,
+    "cortos": 51,
     "desde": "2024-12-01",
-    "hasta": "2026-11-17"
+    "hasta": "2026-11-26"
    },
    "ultimos_2_anios": {
-    "operaciones": 103,
-    "aciertos_pct": 31.1,
-    "r_medio": -0.35,
-    "r_total": -36.08,
-    "factor_beneficio": 0.49,
-    "max_caida_r": 37.02,
-    "rentabilidad_pct": -30.7,
-    "max_caida_pct": 31.3,
+    "operaciones": 104,
+    "aciertos_pct": 30.8,
+    "r_medio": -0.357,
+    "r_total": -37.14,
+    "factor_beneficio": 0.48,
+    "max_caida_r": 38.08,
+    "rentabilidad_pct": -31.4,
+    "max_caida_pct": 32.1,
     "largos": 53,
-    "cortos": 50,
+    "cortos": 51,
     "desde": "2024-12-01",
-    "hasta": "2026-11-17"
+    "hasta": "2026-11-26"
    },
    "ultima_senal": {
     "fecha": "2026-11-26T00:00:00Z",
@@ -1101,7 +1101,7 @@
      "divergencia de RSI",
      "perforación sin volumen (0.5x)"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
@@ -1284,26 +1284,7 @@
      "perforación sin volumen (0.6x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-25T23:00:00Z",
-    "tipo": "upthrust",
-    "direccion": -1,
-    "cierre": 205.7,
-    "nivel": 205.8,
-    "extremo": 206.0,
-    "poc": 197.29625,
-    "vah": 202.4975,
-    "val": 194.285,
-    "rsi": 71.507512,
-    "vol_rel": 0.592294,
-    "atr": 2.311134,
-    "puntos": 3,
-    "motivos": [
-     "RSI sobrecompra (72)",
-     "perforación sin volumen (0.6x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "bch",
