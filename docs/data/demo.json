@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-26T15:01:01Z",
+ "generado": "2026-11-26T15:06:02Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
@@ -218,6 +218,21 @@
      "motivo_salida": "stop",
      "r": -1.401,
      "barras": 3
+    },
+    {
+     "tipo": "spring_asia",
+     "direccion": 1,
+     "puntos": 0,
+     "fecha_senal": "2026-11-26T15:00:00Z",
+     "fecha_entrada": "2026-11-26T15:05:00Z",
+     "fecha_salida": "2026-11-26T15:05:00Z",
+     "entrada": 1683.42,
+     "stop": 1676.058303,
+     "objetivo": 1729.84,
+     "salida": 1682.81,
+     "motivo_salida": "abierta",
+     "r": 0.0,
+     "barras": 1
     }
    ],
    "metricas": {
@@ -291,6 +306,21 @@
      "motivo_salida": "stop",
      "r": -1.4,
      "barras": 7
+    },
+    {
+     "tipo": "spring_asia",
+     "direccion": 1,
+     "puntos": 0,
+     "fecha_senal": "2026-11-26T15:00:00Z",
+     "fecha_entrada": "2026-11-26T15:05:00Z",
+     "fecha_salida": "2026-11-26T15:05:00Z",
+     "entrada": 60380.0,
+     "stop": 60138.48,
+     "objetivo": 61631.57,
+     "salida": 60315.55,
+     "motivo_salida": "abierta",
+     "r": 0.0,
+     "barras": 1
     }
    ],
    "metricas": {
