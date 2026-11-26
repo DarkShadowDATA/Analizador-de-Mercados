@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-26T15:06:02Z",
+ "generado": "2026-11-26T15:11:02Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
@@ -229,25 +229,25 @@
      "entrada": 1683.42,
      "stop": 1676.058303,
      "objetivo": 1729.84,
-     "salida": 1682.81,
-     "motivo_salida": "abierta",
-     "r": 0.0,
+     "salida": 1676.058303,
+     "motivo_salida": "stop",
+     "r": -1.365,
      "barras": 1
     }
    ],
    "metricas": {
-    "operaciones": 3,
-    "aciertos_pct": 33.3,
-    "r_medio": -0.476,
-    "r_total": -1.43,
-    "factor_beneficio": 0.45,
-    "max_caida_r": 2.58,
-    "rentabilidad_pct": -1.4,
-    "max_caida_pct": 2.6,
-    "largos": 2,
+    "operaciones": 4,
+    "aciertos_pct": 25.0,
+    "r_medio": -0.698,
+    "r_total": -2.79,
+    "factor_beneficio": 0.29,
+    "max_caida_r": 3.94,
+    "rentabilidad_pct": -2.8,
+    "max_caida_pct": 3.9,
+    "largos": 3,
     "cortos": 1,
     "desde": "2026-11-24",
-    "hasta": "2026-11-25"
+    "hasta": "2026-11-26"
    },
    "bitget": {
     "error": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
@@ -317,25 +317,25 @@
      "entrada": 60380.0,
      "stop": 60138.48,
      "objetivo": 61631.57,
-     "salida": 60315.55,
-     "motivo_salida": "abierta",
-     "r": 0.0,
+     "salida": 60138.48,
+     "motivo_salida": "stop",
+     "r": -1.399,
      "barras": 1
     }
    ],
    "metricas": {
-    "operaciones": 3,
+    "operaciones": 4,
     "aciertos_pct": 0.0,
-    "r_medio": -1.39,
-    "r_total": -4.17,
+    "r_medio": -1.392,
+    "r_total": -5.57,
     "factor_beneficio": 0.0,
-    "max_caida_r": 4.17,
-    "rentabilidad_pct": -4.1,
-    "max_caida_pct": 4.1,
-    "largos": 2,
+    "max_caida_r": 5.57,
+    "rentabilidad_pct": -5.5,
+    "max_caida_pct": 5.5,
+    "largos": 3,
     "cortos": 1,
     "desde": "2026-11-24",
-    "hasta": "2026-11-25"
+    "hasta": "2026-11-26"
    },
    "bitget": {
     "error": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
@@ -349,5 +349,5 @@
    10000.0
   ]
  ],
- "capital_experimento": 9450.69
+ "capital_experimento": 9191.25
 }
