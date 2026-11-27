@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T03:21:55Z",
+ "generado": "2026-11-27T04:21:54Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -858,7 +858,7 @@
    "mercado": "op",
    "nombre": "Optimism",
    "tf": "1h",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 91,
     "aciertos_pct": 34.1,
@@ -926,7 +926,7 @@
      "nivel en zona de volumen (VAH del perfil anclado)",
      "sacudida con volumen alto (3.2x): esperar test"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
