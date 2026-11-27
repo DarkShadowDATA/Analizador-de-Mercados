@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T00:21:55Z",
+ "generado": "2026-11-27T01:21:47Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -534,7 +534,7 @@
    "mercado": "btc",
    "nombre": "Bitcoin",
    "tf": "1h",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 84,
     "aciertos_pct": 39.3,
