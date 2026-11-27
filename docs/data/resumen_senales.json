@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T12:21:54Z",
+ "generado": "2026-11-27T13:21:57Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -1372,24 +1372,44 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-27T10:00:00Z",
-    "tipo": "upthrust",
+    "fecha": "2026-11-27T12:00:00Z",
+    "tipo": "test_upthrust",
     "direccion": -1,
-    "cierre": 0.6904,
-    "nivel": 0.6923,
+    "cierre": 0.6876,
+    "nivel": 0.693,
     "extremo": 0.693,
     "poc": 0.673066,
     "vah": 0.68438,
     "val": 0.661752,
-    "rsi": 70.153227,
-    "vol_rel": 0.844538,
-    "atr": 0.006254,
-    "puntos": 2,
+    "rsi": 64.795747,
+    "vol_rel": 0.278583,
+    "atr": 0.005998,
+    "puntos": 3,
     "motivos": [
-     "RSI sobrecompra (70)"
+     "retesteo del máximo con menos volumen",
+     "volumen seco (0.3x)"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-27T12:00:00Z",
+    "tipo": "test_upthrust",
+    "direccion": -1,
+    "cierre": 0.6876,
+    "nivel": 0.693,
+    "extremo": 0.693,
+    "poc": 0.673066,
+    "vah": 0.68438,
+    "val": 0.661752,
+    "rsi": 64.795747,
+    "vol_rel": 0.278583,
+    "atr": 0.005998,
+    "puntos": 3,
+    "motivos": [
+     "retesteo del máximo con menos volumen",
+     "volumen seco (0.3x)"
+    ],
+    "velas_desde": 0
+   }
   },
   {
    "mercado": "sui",
