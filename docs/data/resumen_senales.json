@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T18:55:50Z",
+ "generado": "2026-11-27T19:21:53Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -1226,7 +1226,7 @@
      "retesteo del mínimo con menos volumen",
      "volumen seco (0.3x)"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
