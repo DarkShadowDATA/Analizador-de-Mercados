@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T09:21:53Z",
+ "generado": "2026-11-27T10:21:52Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -726,22 +726,21 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-27T02:00:00Z",
-    "tipo": "upthrust",
+    "fecha": "2026-11-27T09:00:00Z",
+    "tipo": "test_upthrust",
     "direccion": -1,
-    "cierre": 1722.18,
-    "nivel": 1729.84,
+    "cierre": 1728.5,
+    "nivel": 1738.88,
     "extremo": 1738.88,
-    "poc": 1701.507875,
-    "vah": 1729.13075,
-    "val": 1667.3855,
-    "rsi": 65.620906,
-    "vol_rel": 5.196297,
-    "atr": 14.300304,
+    "poc": 1701.596125,
+    "vah": 1731.02275,
+    "val": 1683.06825,
+    "rsi": 61.600847,
+    "vol_rel": 0.991729,
+    "atr": 14.081096,
     "puntos": 2,
     "motivos": [
-     "RSI sobrecompra (66)",
-     "sacudida con volumen alto (5.2x): esperar test"
+     "retesteo del máximo con menos volumen"
     ]
    },
    "senal_activa": null
@@ -924,7 +923,7 @@
      "RSI sobrecompra (73)",
      "perforación sin volumen (0.4x)"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
@@ -1392,44 +1391,25 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-27T08:00:00Z",
+    "fecha": "2026-11-27T09:00:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 0.6876,
-    "nivel": 0.69,
-    "extremo": 0.6907,
-    "poc": 0.67285,
-    "vah": 0.68152,
-    "val": 0.66112,
-    "rsi": 67.92035,
-    "vol_rel": 0.45665,
-    "atr": 0.006367,
-    "puntos": 3,
+    "cierre": 0.6897,
+    "nivel": 0.6907,
+    "extremo": 0.6923,
+    "poc": 0.67269,
+    "vah": 0.68382,
+    "val": 0.66156,
+    "rsi": 69.594185,
+    "vol_rel": 1.491818,
+    "atr": 0.006312,
+    "puntos": 2,
     "motivos": [
-     "RSI sobrecompra (68)",
-     "perforación sin volumen (0.5x)"
+     "RSI sobrecompra (70)",
+     "sacudida con volumen alto (1.5x): esperar test"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-27T08:00:00Z",
-    "tipo": "upthrust",
-    "direccion": -1,
-    "cierre": 0.6876,
-    "nivel": 0.69,
-    "extremo": 0.6907,
-    "poc": 0.67285,
-    "vah": 0.68152,
-    "val": 0.66112,
-    "rsi": 67.92035,
-    "vol_rel": 0.45665,
-    "atr": 0.006367,
-    "puntos": 3,
-    "motivos": [
-     "RSI sobrecompra (68)",
-     "perforación sin volumen (0.5x)"
-    ],
-    "velas_desde": 0
-   }
+   "senal_activa": null
   },
   {
    "mercado": "sui",
