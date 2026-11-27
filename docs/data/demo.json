@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T14:36:03Z",
+ "generado": "2026-11-27T14:41:02Z",
  "inicio": "2026-11-23T00:00:00Z",
  "capital_inicial": 10000.0,
  "riesgo_pct": 1.0,
@@ -233,6 +233,21 @@
      "motivo_salida": "stop",
      "r": -1.365,
      "barras": 1
+    },
+    {
+     "tipo": "spring_asia",
+     "direccion": 1,
+     "puntos": 0,
+     "fecha_senal": "2026-11-27T14:35:00Z",
+     "fecha_entrada": "2026-11-27T14:40:00Z",
+     "fecha_salida": "2026-11-27T14:40:00Z",
+     "entrada": 1688.78,
+     "stop": 1682.02488,
+     "objetivo": 1755.0,
+     "salida": 1689.95,
+     "motivo_salida": "abierta",
+     "r": 0.0,
+     "barras": 1
     }
    ],
    "metricas": {
@@ -332,25 +347,25 @@
      "entrada": 61956.48,
      "stop": 62252.801713,
      "objetivo": 60472.01,
-     "salida": 60717.32,
-     "motivo_salida": "abierta",
-     "r": 0.0,
+     "salida": 60472.01,
+     "motivo_salida": "objetivo",
+     "r": 4.679,
      "barras": 75
     }
    ],
    "metricas": {
-    "operaciones": 4,
-    "aciertos_pct": 0.0,
-    "r_medio": -1.392,
-    "r_total": -5.57,
-    "factor_beneficio": 0.0,
+    "operaciones": 5,
+    "aciertos_pct": 20.0,
+    "r_medio": -0.178,
+    "r_total": -0.89,
+    "factor_beneficio": 0.84,
     "max_caida_r": 5.57,
-    "rentabilidad_pct": -5.5,
+    "rentabilidad_pct": -1.0,
     "max_caida_pct": 5.5,
     "largos": 3,
-    "cortos": 1,
+    "cortos": 2,
     "desde": "2026-11-24",
-    "hasta": "2026-11-26"
+    "hasta": "2026-11-27"
    },
    "bitget": {
     "error": "GET /api/v2/mix/position/single-position: 40099 exchange environment is incorrect"
@@ -364,5 +379,5 @@
    10000.0
   ]
  ],
- "capital_experimento": 9191.25
+ "capital_experimento": 9621.32
 }
