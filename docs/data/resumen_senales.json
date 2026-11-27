@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T15:22:01Z",
+ "generado": "2026-11-27T16:21:46Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -99,7 +99,7 @@
      "nivel en zona de volumen (VAH del perfil anclado)",
      "perforación sin volumen (0.1x)"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
@@ -233,22 +233,21 @@
     "hasta": "2026-11-13"
    },
    "ultima_senal": {
-    "fecha": "2026-11-20T00:00:00Z",
-    "tipo": "spring",
-    "direccion": 1,
-    "cierre": 26472.0,
-    "nivel": 26416.0,
-    "extremo": 26382.25,
-    "poc": 27128.321875,
-    "vah": 27510.45625,
-    "val": 26673.4,
-    "rsi": 23.06424,
-    "vol_rel": 0.317242,
-    "atr": 219.894539,
-    "puntos": 3,
+    "fecha": "2026-11-27T14:30:00Z",
+    "tipo": "upthrust",
+    "direccion": -1,
+    "cierre": 26408.75,
+    "nivel": 26436.0,
+    "extremo": 26589.25,
+    "poc": 26846.94375,
+    "vah": 27084.2625,
+    "val": 25976.775,
+    "rsi": 64.126283,
+    "vol_rel": 2.765907,
+    "atr": 215.922103,
+    "puntos": 1,
     "motivos": [
-     "RSI sobreventa (23)",
-     "perforación sin volumen (0.3x)"
+     "sacudida con volumen alto (2.8x): esperar test"
     ]
    },
    "senal_activa": null
@@ -367,32 +366,32 @@
    "tf": "1h",
    "tendencia": "bajista",
    "total": {
-    "operaciones": 66,
-    "aciertos_pct": 48.5,
-    "r_medio": 0.138,
-    "r_total": 9.1,
-    "factor_beneficio": 1.26,
+    "operaciones": 67,
+    "aciertos_pct": 47.8,
+    "r_medio": 0.12,
+    "r_total": 8.05,
+    "factor_beneficio": 1.22,
     "max_caida_r": 7.34,
-    "rentabilidad_pct": 8.9,
+    "rentabilidad_pct": 7.7,
     "max_caida_pct": 7.2,
     "largos": 35,
-    "cortos": 31,
+    "cortos": 32,
     "desde": "2024-07-23",
-    "hasta": "2026-11-23"
+    "hasta": "2026-11-27"
    },
    "ultimos_2_anios": {
-    "operaciones": 58,
-    "aciertos_pct": 48.3,
-    "r_medio": 0.162,
-    "r_total": 9.41,
-    "factor_beneficio": 1.31,
+    "operaciones": 59,
+    "aciertos_pct": 47.5,
+    "r_medio": 0.142,
+    "r_total": 8.37,
+    "factor_beneficio": 1.27,
     "max_caida_r": 7.34,
-    "rentabilidad_pct": 9.3,
+    "rentabilidad_pct": 8.1,
     "max_caida_pct": 7.2,
     "largos": 30,
-    "cortos": 28,
+    "cortos": 29,
     "desde": "2024-12-26",
-    "hasta": "2026-11-23"
+    "hasta": "2026-11-27"
    },
    "ultima_senal": {
     "fecha": "2026-11-26T02:00:00Z",
@@ -413,26 +412,7 @@
      "perforación sin volumen (0.6x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-26T02:00:00Z",
-    "tipo": "upthrust",
-    "direccion": -1,
-    "cierre": 3615.3999,
-    "nivel": 3619.8,
-    "extremo": 3634.7,
-    "poc": 3622.805,
-    "vah": 3685.07,
-    "val": 3548.68,
-    "rsi": 60.649767,
-    "vol_rel": 0.562126,
-    "atr": 30.937144,
-    "puntos": 3,
-    "motivos": [
-     "nivel en zona de volumen (POC del perfil anclado)",
-     "perforación sin volumen (0.6x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "oro",
@@ -726,21 +706,22 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-27T09:00:00Z",
-    "tipo": "test_upthrust",
-    "direccion": -1,
-    "cierre": 1728.5,
-    "nivel": 1738.88,
-    "extremo": 1738.88,
-    "poc": 1701.596125,
-    "vah": 1731.02275,
-    "val": 1683.06825,
-    "rsi": 61.600847,
-    "vol_rel": 0.991729,
-    "atr": 14.081096,
+    "fecha": "2026-11-27T15:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 1672.35,
+    "nivel": 1652.03,
+    "extremo": 1633.85,
+    "poc": 1701.996875,
+    "vah": 1733.79875,
+    "val": 1682.31,
+    "rsi": 36.298192,
+    "vol_rel": 2.499962,
+    "atr": 19.438154,
     "puntos": 2,
     "motivos": [
-     "retesteo del máximo con menos volumen"
+     "divergencia de RSI",
+     "sacudida con volumen alto (2.5x): esperar test"
     ]
    },
    "senal_activa": null
@@ -857,7 +838,7 @@
    "mercado": "op",
    "nombre": "Optimism",
    "tf": "1h",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 92,
     "aciertos_pct": 33.7,
@@ -1018,7 +999,7 @@
    "mercado": "inj",
    "nombre": "Injective",
    "tf": "1h",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 104,
     "aciertos_pct": 30.8,
@@ -1210,22 +1191,22 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-25T23:00:00Z",
-    "tipo": "upthrust",
-    "direccion": -1,
-    "cierre": 205.7,
-    "nivel": 205.8,
-    "extremo": 206.0,
-    "poc": 197.29625,
-    "vah": 202.4975,
-    "val": 194.285,
-    "rsi": 71.507512,
-    "vol_rel": 0.592294,
-    "atr": 2.311134,
-    "puntos": 3,
+    "fecha": "2026-11-27T15:00:00Z",
+    "tipo": "spring",
+    "direccion": 1,
+    "cierre": 205.0,
+    "nivel": 203.8,
+    "extremo": 202.0,
+    "poc": 207.71875,
+    "vah": 215.725,
+    "val": 206.575,
+    "rsi": 36.44384,
+    "vol_rel": 2.170725,
+    "atr": 2.504684,
+    "puntos": 2,
     "motivos": [
-     "RSI sobrecompra (72)",
-     "perforación sin volumen (0.6x)"
+     "divergencia de RSI",
+     "sacudida con volumen alto (2.2x): esperar test"
     ]
    },
    "senal_activa": null
@@ -1342,7 +1323,7 @@
    "mercado": "sui",
    "nombre": "Sui",
    "tf": "1h",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 97,
     "aciertos_pct": 40.2,
@@ -1390,26 +1371,7 @@
      "volumen seco (0.3x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-27T12:00:00Z",
-    "tipo": "test_upthrust",
-    "direccion": -1,
-    "cierre": 0.6876,
-    "nivel": 0.693,
-    "extremo": 0.693,
-    "poc": 0.673066,
-    "vah": 0.68438,
-    "val": 0.661752,
-    "rsi": 64.795747,
-    "vol_rel": 0.278583,
-    "atr": 0.005998,
-    "puntos": 3,
-    "motivos": [
-     "retesteo del máximo con menos volumen",
-     "volumen seco (0.3x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "sui",
