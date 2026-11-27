@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T18:21:54Z",
+ "generado": "2026-11-27T18:55:50Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -97,7 +97,7 @@
      "RSI sobrecompra (70)",
      "nivel en zona de volumen (VAH del perfil anclado)"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
