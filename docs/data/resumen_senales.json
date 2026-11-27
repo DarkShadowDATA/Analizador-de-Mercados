@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T02:21:51Z",
+ "generado": "2026-11-27T03:21:55Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -564,22 +564,22 @@
     "hasta": "2026-11-26"
    },
    "ultima_senal": {
-    "fecha": "2026-11-25T23:00:00Z",
+    "fecha": "2026-11-27T02:00:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 60459.24,
-    "nivel": 60500.0,
-    "extremo": 60569.67,
-    "poc": 60313.6,
-    "vah": 60587.2,
-    "val": 58033.6,
-    "rsi": 62.360967,
-    "vol_rel": 0.307379,
-    "atr": 634.861357,
-    "puntos": 3,
+    "cierre": 61324.37,
+    "nivel": 61631.57,
+    "extremo": 61862.59,
+    "poc": 60779.924875,
+    "vah": 61406.731,
+    "val": 59583.295,
+    "rsi": 66.180601,
+    "vol_rel": 4.154723,
+    "atr": 436.646586,
+    "puntos": 2,
     "motivos": [
-     "nivel en zona de volumen (VAH del perfil anclado)",
-     "perforación sin volumen (0.3x)"
+     "RSI sobrecompra (66)",
+     "sacudida con volumen alto (4.2x): esperar test"
     ]
    },
    "senal_activa": null
@@ -726,21 +726,22 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-26T00:00:00Z",
+    "fecha": "2026-11-27T02:00:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 1697.51,
-    "nivel": 1698.84,
-    "extremo": 1729.84,
-    "poc": 1682.971875,
-    "vah": 1705.65,
-    "val": 1645.175,
-    "rsi": 62.297534,
-    "vol_rel": 0.983401,
-    "atr": 21.211754,
+    "cierre": 1722.18,
+    "nivel": 1729.84,
+    "extremo": 1738.88,
+    "poc": 1701.507875,
+    "vah": 1729.13075,
+    "val": 1667.3855,
+    "rsi": 65.620906,
+    "vol_rel": 5.196297,
+    "atr": 14.300304,
     "puntos": 2,
     "motivos": [
-     "nivel en zona de volumen (VAH del perfil anclado)"
+     "RSI sobrecompra (66)",
+     "sacudida con volumen alto (5.2x): esperar test"
     ]
    },
    "senal_activa": null
@@ -859,54 +860,74 @@
    "tf": "1h",
    "tendencia": "bajista",
    "total": {
-    "operaciones": 90,
-    "aciertos_pct": 34.4,
-    "r_medio": -0.209,
-    "r_total": -18.82,
-    "factor_beneficio": 0.68,
+    "operaciones": 91,
+    "aciertos_pct": 34.1,
+    "r_medio": -0.218,
+    "r_total": -19.88,
+    "factor_beneficio": 0.67,
     "max_caida_r": 25.05,
-    "rentabilidad_pct": -17.7,
+    "rentabilidad_pct": -18.5,
     "max_caida_pct": 22.6,
     "largos": 34,
-    "cortos": 56,
+    "cortos": 57,
     "desde": "2024-12-11",
-    "hasta": "2026-11-11"
+    "hasta": "2026-11-27"
    },
    "ultimos_2_anios": {
-    "operaciones": 90,
-    "aciertos_pct": 34.4,
-    "r_medio": -0.209,
-    "r_total": -18.82,
-    "factor_beneficio": 0.68,
+    "operaciones": 91,
+    "aciertos_pct": 34.1,
+    "r_medio": -0.218,
+    "r_total": -19.88,
+    "factor_beneficio": 0.67,
     "max_caida_r": 25.05,
-    "rentabilidad_pct": -17.7,
+    "rentabilidad_pct": -18.5,
     "max_caida_pct": 22.6,
     "largos": 34,
-    "cortos": 56,
+    "cortos": 57,
     "desde": "2024-12-11",
-    "hasta": "2026-11-11"
+    "hasta": "2026-11-27"
    },
    "ultima_senal": {
-    "fecha": "2026-11-26T03:00:00Z",
+    "fecha": "2026-11-27T02:00:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 0.07045,
-    "nivel": 0.07059,
-    "extremo": 0.0709,
-    "poc": 0.068848,
-    "vah": 0.070168,
-    "val": 0.066472,
-    "rsi": 65.975327,
-    "vol_rel": 0.348252,
-    "atr": 0.000842,
-    "puntos": 4,
+    "cierre": 0.07068,
+    "nivel": 0.0709,
+    "extremo": 0.07149,
+    "poc": 0.069381,
+    "vah": 0.070865,
+    "val": 0.068209,
+    "rsi": 62.016192,
+    "vol_rel": 3.234113,
+    "atr": 0.000653,
+    "puntos": 3,
     "motivos": [
-     "RSI sobrecompra (68)",
+     "divergencia de RSI",
      "nivel en zona de volumen (VAH del perfil anclado)",
-     "perforación sin volumen (0.4x)"
+     "sacudida con volumen alto (3.2x): esperar test"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-27T02:00:00Z",
+    "tipo": "upthrust",
+    "direccion": -1,
+    "cierre": 0.07068,
+    "nivel": 0.0709,
+    "extremo": 0.07149,
+    "poc": 0.069381,
+    "vah": 0.070865,
+    "val": 0.068209,
+    "rsi": 62.016192,
+    "vol_rel": 3.234113,
+    "atr": 0.000653,
+    "puntos": 3,
+    "motivos": [
+     "divergencia de RSI",
+     "nivel en zona de volumen (VAH del perfil anclado)",
+     "sacudida con volumen alto (3.2x): esperar test"
+    ],
+    "velas_desde": 0
+   }
   },
   {
    "mercado": "op",
@@ -1373,22 +1394,22 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-24T20:00:00Z",
-    "tipo": "test_spring",
-    "direccion": 1,
-    "cierre": 0.6445,
-    "nivel": 0.6365,
-    "extremo": 0.6365,
-    "poc": 0.674087,
-    "vah": 0.7044,
-    "val": 0.64135,
-    "rsi": 39.608061,
-    "vol_rel": 0.272185,
-    "atr": 0.009388,
-    "puntos": 3,
+    "fecha": "2026-11-27T02:00:00Z",
+    "tipo": "upthrust",
+    "direccion": -1,
+    "cierre": 0.6801,
+    "nivel": 0.6847,
+    "extremo": 0.6867,
+    "poc": 0.664044,
+    "vah": 0.67945,
+    "val": 0.648637,
+    "rsi": 65.704007,
+    "vol_rel": 3.058271,
+    "atr": 0.006602,
+    "puntos": 2,
     "motivos": [
-     "retesteo del mínimo con menos volumen",
-     "volumen seco (0.3x)"
+     "RSI sobrecompra (66)",
+     "sacudida con volumen alto (3.1x): esperar test"
     ]
    },
    "senal_activa": null
