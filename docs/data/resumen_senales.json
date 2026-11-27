@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T17:21:52Z",
+ "generado": "2026-11-27T18:21:54Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -31,7 +31,7 @@
    "mercado": "sp500",
    "nombre": "S&P 500",
    "tf": "1h",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 75,
     "aciertos_pct": 37.3,
@@ -97,7 +97,7 @@
      "RSI sobrecompra (70)",
      "nivel en zona de volumen (VAH del perfil anclado)"
     ],
-    "velas_desde": 0
+    "velas_desde": 1
    }
   },
   {
@@ -201,7 +201,7 @@
    "mercado": "nasdaq100",
    "nombre": "Nasdaq 100",
    "tf": "1h",
-   "tendencia": "bajista",
+   "tendencia": "alcista",
    "total": {
     "operaciones": 83,
     "aciertos_pct": 32.5,
@@ -1190,25 +1190,44 @@
     "hasta": "2026-11-23"
    },
    "ultima_senal": {
-    "fecha": "2026-11-27T15:00:00Z",
-    "tipo": "spring",
+    "fecha": "2026-11-27T17:00:00Z",
+    "tipo": "test_spring",
     "direccion": 1,
-    "cierre": 205.0,
-    "nivel": 203.8,
+    "cierre": 205.6,
+    "nivel": 202.0,
     "extremo": 202.0,
     "poc": 207.71875,
-    "vah": 215.725,
+    "vah": 216.1825,
     "val": 206.575,
-    "rsi": 36.44384,
-    "vol_rel": 2.170725,
-    "atr": 2.504684,
-    "puntos": 2,
+    "rsi": 39.042102,
+    "vol_rel": 0.26575,
+    "atr": 2.450977,
+    "puntos": 3,
     "motivos": [
-     "divergencia de RSI",
-     "sacudida con volumen alto (2.2x): esperar test"
+     "retesteo del mínimo con menos volumen",
+     "volumen seco (0.3x)"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-27T17:00:00Z",
+    "tipo": "test_spring",
+    "direccion": 1,
+    "cierre": 205.6,
+    "nivel": 202.0,
+    "extremo": 202.0,
+    "poc": 207.71875,
+    "vah": 216.1825,
+    "val": 206.575,
+    "rsi": 39.042102,
+    "vol_rel": 0.26575,
+    "atr": 2.450977,
+    "puntos": 3,
+    "motivos": [
+     "retesteo del mínimo con menos volumen",
+     "volumen seco (0.3x)"
+    ],
+    "velas_desde": 0
+   }
   },
   {
    "mercado": "bch",

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27T17:21:51Z",
+ "actualizado": "2026-11-27T18:21:53Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -15,9 +15,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13807,
+     "velas": 13808,
      "desde": "2024-07-01",
-     "hasta": "2026-11-27T16:30Z",
+     "hasta": "2026-11-27T17:30Z",
      "fuente": "Yahoo ES=F"
     },
     "4h": {
@@ -33,8 +33,8 @@
      "fuente": "Yahoo ES=F"
     }
    },
-   "ultimo": 7286.5,
-   "cambio_pct": -0.4
+   "ultimo": 7306.5,
+   "cambio_pct": -0.13
   },
   {
    "id": "nasdaq100",
@@ -45,9 +45,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13804,
+     "velas": 13805,
      "desde": "2024-07-01",
-     "hasta": "2026-11-27T16:30Z",
+     "hasta": "2026-11-27T17:30Z",
      "fuente": "Yahoo NQ=F"
     },
     "4h": {
@@ -63,8 +63,8 @@
      "fuente": "Yahoo NQ=F"
     }
    },
-   "ultimo": 26595.25,
-   "cambio_pct": -0.47
+   "ultimo": 26772.75,
+   "cambio_pct": 0.19
   },
   {
    "id": "oro",
@@ -75,9 +75,9 @@
    "bitget": null,
    "series": {
     "1h": {
-     "velas": 13837,
+     "velas": 13838,
      "desde": "2024-07-01",
-     "hasta": "2026-11-27T16:30Z",
+     "hasta": "2026-11-27T17:30Z",
      "fuente": "Yahoo GC=F"
     },
     "4h": {
@@ -93,8 +93,8 @@
      "fuente": "Yahoo GC=F"
     }
    },
-   "ultimo": 3658.9,
-   "cambio_pct": 0.08
+   "ultimo": 3680.1,
+   "cambio_pct": 0.66
   },
   {
    "id": "btc",
@@ -105,9 +105,9 @@
    "bitget": "BTCUSDT",
    "series": {
     "1h": {
-     "velas": 17579,
+     "velas": 17580,
      "desde": "2024-11-21",
-     "hasta": "2026-11-27T17:00Z",
+     "hasta": "2026-11-27T18:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "4h": {
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 59935.76,
-   "cambio_pct": -1.06
+   "ultimo": 59877.57,
+   "cambio_pct": -1.16
   },
   {
    "id": "eth",
@@ -135,9 +135,9 @@
    "bitget": "ETHUSDT",
    "series": {
     "1h": {
-     "velas": 17579,
+     "velas": 17580,
      "desde": "2024-11-21",
-     "hasta": "2026-11-27T17:00Z",
+     "hasta": "2026-11-27T18:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "4h": {
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1672.49,
-   "cambio_pct": -1.02
+   "ultimo": 1669.95,
+   "cambio_pct": -1.17
   },
   {
    "id": "op",
@@ -165,9 +165,9 @@
    "bitget": "OPUSDT",
    "series": {
     "1h": {
-     "velas": 17568,
+     "velas": 17569,
      "desde": "2024-11-22",
-     "hasta": "2026-11-27T17:00Z",
+     "hasta": "2026-11-27T18:00Z",
      "fuente": "Bitget OPUSDT"
     },
     "4h": {
@@ -183,8 +183,8 @@
      "fuente": "Bitget OPUSDT"
     }
    },
-   "ultimo": 0.0712,
-   "cambio_pct": 2.49
+   "ultimo": 0.071,
+   "cambio_pct": 2.1
   },
   {
    "id": "inj",
@@ -195,9 +195,9 @@
    "bitget": "INJUSDT",
    "series": {
     "1h": {
-     "velas": 17568,
+     "velas": 17569,
      "desde": "2024-11-22",
-     "hasta": "2026-11-27T17:00Z",
+     "hasta": "2026-11-27T18:00Z",
      "fuente": "Bitget INJUSDT"
     },
     "4h": {
@@ -213,8 +213,8 @@
      "fuente": "Bitget INJUSDT"
     }
    },
-   "ultimo": 6.32,
-   "cambio_pct": 2.18
+   "ultimo": 6.313,
+   "cambio_pct": 2.07
   },
   {
    "id": "bch",
@@ -225,9 +225,9 @@
    "bitget": "BCHUSDT",
    "series": {
     "1h": {
-     "velas": 17568,
+     "velas": 17569,
      "desde": "2024-11-22",
-     "hasta": "2026-11-27T17:00Z",
+     "hasta": "2026-11-27T18:00Z",
      "fuente": "Bitget BCHUSDT"
     },
     "4h": {
@@ -243,8 +243,8 @@
      "fuente": "Bitget BCHUSDT"
     }
    },
-   "ultimo": 204.8,
-   "cambio_pct": -2.48
+   "ultimo": 205.3,
+   "cambio_pct": -2.24
   },
   {
    "id": "sui",
@@ -255,9 +255,9 @@
    "bitget": "SUIUSDT",
    "series": {
     "1h": {
-     "velas": 17568,
+     "velas": 17569,
      "desde": "2024-11-22",
-     "hasta": "2026-11-27T17:00Z",
+     "hasta": "2026-11-27T18:00Z",
      "fuente": "Bitget SUIUSDT"
     },
     "4h": {
@@ -273,8 +273,8 @@
      "fuente": "Bitget SUIUSDT"
     }
    },
-   "ultimo": 0.6732,
-   "cambio_pct": 0.67
+   "ultimo": 0.671,
+   "cambio_pct": 0.34
   }
  ]
 }
