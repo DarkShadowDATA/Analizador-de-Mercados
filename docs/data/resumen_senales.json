@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T20:21:50Z",
+ "generado": "2026-11-27T21:21:53Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -1208,26 +1208,7 @@
      "volumen seco (0.3x)"
     ]
    },
-   "senal_activa": {
-    "fecha": "2026-11-27T17:00:00Z",
-    "tipo": "test_spring",
-    "direccion": 1,
-    "cierre": 205.6,
-    "nivel": 202.0,
-    "extremo": 202.0,
-    "poc": 207.71875,
-    "vah": 216.1825,
-    "val": 206.575,
-    "rsi": 39.042102,
-    "vol_rel": 0.26575,
-    "atr": 2.450977,
-    "puntos": 3,
-    "motivos": [
-     "retesteo del mínimo con menos volumen",
-     "volumen seco (0.3x)"
-    ],
-    "velas_desde": 2
-   }
+   "senal_activa": null
   },
   {
    "mercado": "bch",
