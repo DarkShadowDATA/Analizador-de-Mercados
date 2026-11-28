@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-28T01:21:44Z",
+ "actualizado": "2026-11-28T01:57:09Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 60142.99,
-   "cambio_pct": 0.36
+   "ultimo": 60197.41,
+   "cambio_pct": 0.45
   },
   {
    "id": "eth",
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1668.23,
-   "cambio_pct": 0.34
+   "ultimo": 1669.76,
+   "cambio_pct": 0.43
   },
   {
    "id": "op",
@@ -184,7 +184,7 @@
     }
    },
    "ultimo": 0.0711,
-   "cambio_pct": -0.38
+   "cambio_pct": -0.5
   },
   {
    "id": "inj",
@@ -213,8 +213,8 @@
      "fuente": "Bitget INJUSDT"
     }
    },
-   "ultimo": 6.364,
-   "cambio_pct": 0.49
+   "ultimo": 6.323,
+   "cambio_pct": -0.16
   },
   {
    "id": "bch",
@@ -243,8 +243,8 @@
      "fuente": "Bitget BCHUSDT"
     }
    },
-   "ultimo": 209.7,
-   "cambio_pct": 1.21
+   "ultimo": 209.4,
+   "cambio_pct": 1.06
   },
   {
    "id": "sui",
@@ -273,8 +273,8 @@
      "fuente": "Bitget SUIUSDT"
     }
    },
-   "ultimo": 0.6764,
-   "cambio_pct": 0.46
+   "ultimo": 0.6771,
+   "cambio_pct": 0.56
   }
  ]
 }
