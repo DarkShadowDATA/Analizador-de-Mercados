@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-28T04:21:55Z",
+ "generado": "2026-11-28T05:21:54Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -35,11 +35,11 @@
    "total": {
     "operaciones": 75,
     "aciertos_pct": 37.3,
-    "r_medio": -0.193,
-    "r_total": -14.51,
-    "factor_beneficio": 0.71,
+    "r_medio": -0.196,
+    "r_total": -14.72,
+    "factor_beneficio": 0.7,
     "max_caida_r": 18.9,
-    "rentabilidad_pct": -14.0,
+    "rentabilidad_pct": -14.2,
     "max_caida_pct": 17.5,
     "largos": 33,
     "cortos": 42,
@@ -49,11 +49,11 @@
    "ultimos_2_anios": {
     "operaciones": 66,
     "aciertos_pct": 40.9,
-    "r_medio": -0.109,
-    "r_total": -7.22,
+    "r_medio": -0.113,
+    "r_total": -7.43,
     "factor_beneficio": 0.82,
     "max_caida_r": 14.2,
-    "rentabilidad_pct": -7.4,
+    "rentabilidad_pct": -7.6,
     "max_caida_pct": 13.4,
     "largos": 31,
     "cortos": 35,
@@ -61,43 +61,43 @@
     "hasta": "2026-11-27"
    },
    "ultima_senal": {
-    "fecha": "2026-11-27T15:30:00Z",
+    "fecha": "2026-11-27T16:30:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 7280.25,
-    "nivel": 7288.5,
-    "extremo": 7293.5,
-    "poc": 7188.5375,
-    "vah": 7293.5,
-    "val": 7130.225,
-    "rsi": 69.61131,
-    "vol_rel": 1.189327,
-    "atr": 39.118785,
+    "cierre": 7291.75,
+    "nivel": 7305.5,
+    "extremo": 7307.75,
+    "poc": 7189.846875,
+    "vah": 7307.75,
+    "val": 7128.8625,
+    "rsi": 68.685912,
+    "vol_rel": 1.119873,
+    "atr": 42.097637,
     "puntos": 3,
     "motivos": [
-     "RSI sobrecompra (70)",
+     "RSI sobrecompra (69)",
      "nivel en zona de volumen (VAH del perfil anclado)"
     ]
    },
    "senal_activa": {
-    "fecha": "2026-11-27T15:30:00Z",
+    "fecha": "2026-11-27T16:30:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 7280.25,
-    "nivel": 7288.5,
-    "extremo": 7293.5,
-    "poc": 7188.5375,
-    "vah": 7293.5,
-    "val": 7130.225,
-    "rsi": 69.61131,
-    "vol_rel": 1.189327,
-    "atr": 39.118785,
+    "cierre": 7291.75,
+    "nivel": 7305.5,
+    "extremo": 7307.75,
+    "poc": 7189.846875,
+    "vah": 7307.75,
+    "val": 7128.8625,
+    "rsi": 68.685912,
+    "vol_rel": 1.119873,
+    "atr": 42.097637,
     "puntos": 3,
     "motivos": [
-     "RSI sobrecompra (70)",
+     "RSI sobrecompra (69)",
      "nivel en zona de volumen (VAH del perfil anclado)"
     ],
-    "velas_desde": 2
+    "velas_desde": 1
    }
   },
   {
@@ -231,25 +231,44 @@
     "hasta": "2026-11-13"
    },
    "ultima_senal": {
-    "fecha": "2026-11-27T15:30:00Z",
+    "fecha": "2026-11-27T16:30:00Z",
     "tipo": "upthrust",
     "direccion": -1,
-    "cierre": 26563.5,
-    "nivel": 26589.25,
-    "extremo": 26617.75,
+    "cierre": 26606.0,
+    "nivel": 26678.5,
+    "extremo": 26697.0,
     "poc": 26846.94375,
-    "vah": 27084.2625,
-    "val": 25976.775,
-    "rsi": 67.973263,
-    "vol_rel": 1.330318,
-    "atr": 216.282804,
-    "puntos": 2,
+    "vah": 26978.7875,
+    "val": 25924.0375,
+    "rsi": 66.445474,
+    "vol_rel": 0.946578,
+    "atr": 231.372936,
+    "puntos": 3,
     "motivos": [
-     "RSI sobrecompra (68)",
-     "sacudida con volumen alto (1.3x): esperar test"
+     "RSI sobrecompra (66)",
+     "nivel en zona de volumen (POC del perfil anclado)"
     ]
    },
-   "senal_activa": null
+   "senal_activa": {
+    "fecha": "2026-11-27T16:30:00Z",
+    "tipo": "upthrust",
+    "direccion": -1,
+    "cierre": 26606.0,
+    "nivel": 26678.5,
+    "extremo": 26697.0,
+    "poc": 26846.94375,
+    "vah": 26978.7875,
+    "val": 25924.0375,
+    "rsi": 66.445474,
+    "vol_rel": 0.946578,
+    "atr": 231.372936,
+    "puntos": 3,
+    "motivos": [
+     "RSI sobrecompra (66)",
+     "nivel en zona de volumen (POC del perfil anclado)"
+    ],
+    "velas_desde": 1
+   }
   },
   {
    "mercado": "nasdaq100",
@@ -367,11 +386,11 @@
    "total": {
     "operaciones": 66,
     "aciertos_pct": 47.0,
-    "r_medio": 0.08,
-    "r_total": 5.27,
-    "factor_beneficio": 1.15,
+    "r_medio": 0.078,
+    "r_total": 5.16,
+    "factor_beneficio": 1.14,
     "max_caida_r": 7.34,
-    "rentabilidad_pct": 4.8,
+    "rentabilidad_pct": 4.7,
     "max_caida_pct": 7.2,
     "largos": 35,
     "cortos": 31,
@@ -381,11 +400,11 @@
    "ultimos_2_anios": {
     "operaciones": 58,
     "aciertos_pct": 46.6,
-    "r_medio": 0.096,
-    "r_total": 5.58,
-    "factor_beneficio": 1.18,
+    "r_medio": 0.094,
+    "r_total": 5.48,
+    "factor_beneficio": 1.17,
     "max_caida_r": 7.34,
-    "rentabilidad_pct": 5.2,
+    "rentabilidad_pct": 5.1,
     "max_caida_pct": 7.2,
     "largos": 30,
     "cortos": 28,
@@ -837,7 +856,7 @@
    "mercado": "op",
    "nombre": "Optimism",
    "tf": "1h",
-   "tendencia": "alcista",
+   "tendencia": "bajista",
    "total": {
     "operaciones": 92,
     "aciertos_pct": 33.7,
