@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-28T03:42:15Z",
+ "actualizado": "2026-11-28T04:21:53Z",
  "temporalidades": [
   "1h",
   "4h",
@@ -105,15 +105,15 @@
    "bitget": "BTCUSDT",
    "series": {
     "1h": {
-     "velas": 17589,
+     "velas": 17590,
      "desde": "2024-11-21",
-     "hasta": "2026-11-28T03:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "4h": {
-     "velas": 13174,
+     "velas": 13175,
      "desde": "2020-11-12",
-     "hasta": "2026-11-28T00:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget BTCUSDT"
     },
     "1d": {
@@ -123,8 +123,8 @@
      "fuente": "Bitget BTCUSDT"
     }
    },
-   "ultimo": 59964.61,
-   "cambio_pct": 0.06
+   "ultimo": 60060.06,
+   "cambio_pct": 0.22
   },
   {
    "id": "eth",
@@ -135,15 +135,15 @@
    "bitget": "ETHUSDT",
    "series": {
     "1h": {
-     "velas": 17589,
+     "velas": 17590,
      "desde": "2024-11-21",
-     "hasta": "2026-11-28T03:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "4h": {
-     "velas": 13174,
+     "velas": 13175,
      "desde": "2020-11-12",
-     "hasta": "2026-11-28T00:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget ETHUSDT"
     },
     "1d": {
@@ -153,8 +153,8 @@
      "fuente": "Bitget ETHUSDT"
     }
    },
-   "ultimo": 1664.63,
-   "cambio_pct": 0.13
+   "ultimo": 1666.13,
+   "cambio_pct": 0.22
   },
   {
    "id": "op",
@@ -165,15 +165,15 @@
    "bitget": "OPUSDT",
    "series": {
     "1h": {
-     "velas": 17578,
+     "velas": 17579,
      "desde": "2024-11-22",
-     "hasta": "2026-11-28T03:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget OPUSDT"
     },
     "4h": {
-     "velas": 9801,
+     "velas": 9802,
      "desde": "2022-05-31",
-     "hasta": "2026-11-28T00:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget OPUSDT"
     },
     "1d": {
@@ -183,8 +183,8 @@
      "fuente": "Bitget OPUSDT"
     }
    },
-   "ultimo": 0.0701,
-   "cambio_pct": -1.79
+   "ultimo": 0.0706,
+   "cambio_pct": -1.2
   },
   {
    "id": "inj",
@@ -195,15 +195,15 @@
    "bitget": "INJUSDT",
    "series": {
     "1h": {
-     "velas": 17578,
+     "velas": 17579,
      "desde": "2024-11-22",
-     "hasta": "2026-11-28T03:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget INJUSDT"
     },
     "4h": {
-     "velas": 9080,
+     "velas": 9081,
      "desde": "2022-09-29",
-     "hasta": "2026-11-28T00:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget INJUSDT"
     },
     "1d": {
@@ -213,8 +213,8 @@
      "fuente": "Bitget INJUSDT"
     }
    },
-   "ultimo": 6.265,
-   "cambio_pct": -1.07
+   "ultimo": 6.282,
+   "cambio_pct": -0.81
   },
   {
    "id": "bch",
@@ -225,15 +225,15 @@
    "bitget": "BCHUSDT",
    "series": {
     "1h": {
-     "velas": 17578,
+     "velas": 17579,
      "desde": "2024-11-22",
-     "hasta": "2026-11-28T03:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget BCHUSDT"
     },
     "4h": {
-     "velas": 13171,
+     "velas": 13172,
      "desde": "2020-11-13",
-     "hasta": "2026-11-28T00:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget BCHUSDT"
     },
     "1d": {
@@ -243,8 +243,8 @@
      "fuente": "Bitget BCHUSDT"
     }
    },
-   "ultimo": 209.4,
-   "cambio_pct": 1.06
+   "ultimo": 209.8,
+   "cambio_pct": 1.25
   },
   {
    "id": "sui",
@@ -255,15 +255,15 @@
    "bitget": "SUIUSDT",
    "series": {
     "1h": {
-     "velas": 17578,
+     "velas": 17579,
      "desde": "2024-11-22",
-     "hasta": "2026-11-28T03:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget SUIUSDT"
     },
     "4h": {
-     "velas": 7790,
+     "velas": 7791,
      "desde": "2023-05-03",
-     "hasta": "2026-11-28T00:00Z",
+     "hasta": "2026-11-28T04:00Z",
      "fuente": "Bitget SUIUSDT"
     },
     "1d": {
@@ -273,8 +273,8 @@
      "fuente": "Bitget SUIUSDT"
     }
    },
-   "ultimo": 0.6714,
-   "cambio_pct": -0.28
+   "ultimo": 0.673,
+   "cambio_pct": -0.04
   }
  ]
 }
