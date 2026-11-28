@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-28T08:21:56Z",
+ "generado": "2026-11-28T09:21:54Z",
  "parametros": {
   "rango_barras": 30,
   "rango_min_atr": 3.0,
@@ -924,7 +924,7 @@
      "nivel en zona de volumen (VAL del perfil anclado)",
      "sacudida con volumen alto (1.9x): esperar test"
     ],
-    "velas_desde": 1
+    "velas_desde": 2
    }
   },
   {
